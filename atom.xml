@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://wushuo.top</id>
+    <id>https://whuosu.github.io</id>
     <title>Gridea</title>
-    <updated>2020-08-21T11:38:36.376Z</updated>
+    <updated>2020-08-21T11:43:44.165Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://wushuo.top"/>
-    <link rel="self" href="https://wushuo.top/atom.xml"/>
+    <link rel="alternate" href="https://whuosu.github.io"/>
+    <link rel="self" href="https://whuosu.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://wushuo.top/images/avatar.png</logo>
-    <icon>https://wushuo.top/favicon.ico</icon>
+    <logo>https://whuosu.github.io/images/avatar.png</logo>
+    <icon>https://whuosu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://wushuo.top/post/hello-gridea/</id>
-        <link href="https://wushuo.top/post/hello-gridea/">
+        <id>https://whuosu.github.io/post/hello-gridea/</id>
+        <link href="https://whuosu.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
