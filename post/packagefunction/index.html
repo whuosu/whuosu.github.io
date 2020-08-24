@@ -1,0 +1,278 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>集成电路封装方式简介 | Shuo</title>
+<link rel="shortcut icon" href="https://whuosu.github.io/favicon.ico?v=1598286367696">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://whuosu.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="集成电路封装方式简介 | Shuo - Atom Feed" href="https://whuosu.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="本文主要介绍现代半导体行业芯片主要的封装方式。
+
+# DIP 封装
+
+Dual Inline Package 即双列直插封装
+在没有在线编程时代，便于烧录
+现在较多用于单片机 MCU
+
+方向和引脚编号
+
+当元件的识别缺口朝上时，左侧最上方的..." />
+    <meta name="keywords" content="技术" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://whuosu.github.io">
+  <img class="avatar" src="https://whuosu.github.io/images/avatar.png?v=1598286367696" alt="">
+  </a>
+  <h1 class="site-title">
+    Shuo
+  </h1>
+  <p class="site-description">
+    我的故事写不进作文
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/whuosu" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/SuWhuo" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://www.zhihu.com/people/xbao-bao-28" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              集成电路封装方式简介
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-08-24
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://whuosu.github.io/tag/Jt3X4OUk5/" class="post-tag">
+                  # 技术
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>本文主要介绍现代半导体行业<strong>芯片</strong>主要的封装方式。</p>
+<!-- more -->
+<h3 id="dip-封装"># <strong>DIP</strong> 封装</h3>
+<ul>
+<li>Dual Inline Package 即<strong>双列直插封装</strong></li>
+<li>在没有在线编程时代，便于烧录</li>
+<li>现在较多用于单片机 MCU</li>
+</ul>
+<h4 id="方向和引脚编号">方向和引脚编号</h4>
+<ul>
+<li>当元件的识别缺口朝上时，左侧最上方的引脚为引脚1，其他引脚则以逆时针的顺序依序编号。有时引脚1也会以圆点作为标示。</li>
+</ul>
+<h3 id="pga-封装"># <strong>PGA</strong> 封装</h3>
+<ul>
+<li>Pin Grid Array 即<strong>插针网格阵列</strong></li>
+<li>PGA封装一般是将集成电路（IC）焊接在一块电路板上，电路板的另一面是排列成方阵的插针</li>
+<li>插针可以插入或焊接到其他电路板上对应的插座中，适合于需要频繁插拔的场合</li>
+</ul>
+<h4 id="用途">用途</h4>
+<ul>
+<li>intel早期处理器曾使用PGA封装，如 <a href="https://zh.wikipedia.org/wiki/%E5%A5%94%E8%85%BE4">Intel Pentium 4</a> with 1.4 Ghz 1 Core 1 Thread</li>
+<li><a href="https://www.amd.com/en">AMD</a> 的绝大部分桌面级CPU采用PGA封装，仅有Ryzen Threadripper系列及服务器的EPYC等少量CPU为LGA封装。</li>
+</ul>
+<h3 id="bga-封装"># <strong>BGA</strong> 封装</h3>
+<ul>
+<li>Ball Grid Array 即<strong>球栅阵列封装</strong></li>
+<li>BGA封装常用来永久性固定如微处理器之类的的装置</li>
+<li>BGA封装能提供比其他如<strong>双列直插封装</strong>或<strong>四侧引脚扁平封装</strong>所容纳更多的接脚</li>
+<li>BGA封装技术提供<strong>低电感引脚</strong>，在封装与PCB之间的距离非常短，有了低电感引脚，相较于针脚装置能有更优异的电子特性</li>
+</ul>
+<h4 id="用途-2">用途</h4>
+<ul>
+<li>绝大多数笔记本电脑都采用BGA封装</li>
+</ul>
+<h3 id="lga-封装"># <strong>LGA</strong> 封装</h3>
+<ul>
+<li>Land Grid Array 即<strong>平面网格阵列封装</strong></li>
+<li>LGA封装的特点在于其针脚是位于插座上而非集成电路上。LGA封装的芯片能被连接到印刷电路板（PCB）上或直接焊接至电路板上</li>
+<li>LGA封装与传统针脚在集成电路上的封装方式相比，可减少针脚损坏的问题并可增加脚位</li>
+</ul>
+<h4 id="用途-3">用途</h4>
+<ul>
+<li>Intel 的绝大多数桌面级处理器均采用LGA封装</li>
+<li>AMD 和 IBM 也曾采用过LGA封装，如 AMD 的 Socket TR4 (Zen2) 和 IBM 的 Power 8</li>
+</ul>
+<h3 id="plcc-封装-即-塑料芯片载体"># <strong>PLCC</strong> 封装 即 塑料芯片载体</h3>
+<ul>
+<li>Plastic Leaded Chip Carrier</li>
+<li>PLCC封装在正方形的封装四边都有接脚，相比起其内部用来挂载集成电路的空腔来，整个封装所占体积较大</li>
+<li>PLCC封装为32引脚</li>
+</ul>
+<h3 id="mcm-封装"># <strong>MCM</strong> 封装</h3>
+<ul>
+<li>Multi-Chip Module 即<strong>多芯片模组</strong></li>
+<li>在MCM未发创前，一个封装内多半只有一个裸晶</li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#dip-%E5%B0%81%E8%A3%85"># <strong>DIP</strong> 封装</a>
+<ul>
+<li><a href="#%E6%96%B9%E5%90%91%E5%92%8C%E5%BC%95%E8%84%9A%E7%BC%96%E5%8F%B7">方向和引脚编号</a></li>
+</ul>
+</li>
+<li><a href="#pga-%E5%B0%81%E8%A3%85"># <strong>PGA</strong> 封装</a>
+<ul>
+<li><a href="#%E7%94%A8%E9%80%94">用途</a></li>
+</ul>
+</li>
+<li><a href="#bga-%E5%B0%81%E8%A3%85"># <strong>BGA</strong> 封装</a>
+<ul>
+<li><a href="#%E7%94%A8%E9%80%94-2">用途</a></li>
+</ul>
+</li>
+<li><a href="#lga-%E5%B0%81%E8%A3%85"># <strong>LGA</strong> 封装</a>
+<ul>
+<li><a href="#%E7%94%A8%E9%80%94-3">用途</a></li>
+</ul>
+</li>
+<li><a href="#plcc-%E5%B0%81%E8%A3%85-%E5%8D%B3-%E5%A1%91%E6%96%99%E8%8A%AF%E7%89%87%E8%BD%BD%E4%BD%93"># <strong>PLCC</strong> 封装 即 塑料芯片载体</a></li>
+<li><a href="#mcm-%E5%B0%81%E8%A3%85"># <strong>MCM</strong> 封装</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://whuosu.github.io/post/hackintosh/">
+              <h3 class="post-title">
+                Hackintosh on intel G41 with 775/771 CPU
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by&nbsp;<a href="https://gridea.dev/">Gridea</a>
+  <a class="rss" href="https://whuosu.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
