@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://whuosu.github.io</id>
     <title>Shuo</title>
-    <updated>2020-08-24T03:27:14.359Z</updated>
+    <updated>2020-08-24T16:23:34.751Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://whuosu.github.io"/>
     <link rel="self" href="https://whuosu.github.io/atom.xml"/>
@@ -10,6 +10,72 @@
     <logo>https://whuosu.github.io/images/avatar.png</logo>
     <icon>https://whuosu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[集成电路封装方式简介]]></title>
+        <id>https://whuosu.github.io/post/ji-cheng-dian-lu-feng-zhuang-fang-shi-jian-jie/</id>
+        <link href="https://whuosu.github.io/post/ji-cheng-dian-lu-feng-zhuang-fang-shi-jian-jie/">
+        </link>
+        <updated>2020-08-24T15:02:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>本文主要介绍现代半导体行业<strong>芯片</strong>主要的封装方式。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本文主要介绍现代半导体行业<strong>芯片</strong>主要的封装方式。</p>
+<!-- more -->
+<h3 id="dip-封装"># <strong>DIP</strong> 封装</h3>
+<ul>
+<li>Dual Inline Package 即<strong>双列直插封装</strong></li>
+<li>在没有在线编程时代，便于烧录</li>
+<li>现在较多用于单片机 MCU</li>
+</ul>
+<h4 id="方向和引脚编号">方向和引脚编号</h4>
+<ul>
+<li>当元件的识别缺口朝上时，左侧最上方的引脚为引脚1，其他引脚则以逆时针的顺序依序编号。有时引脚1也会以圆点作为标示。</li>
+</ul>
+<h3 id="pga-封装"># <strong>PGA</strong> 封装</h3>
+<ul>
+<li>Pin Grid Array 即<strong>插针网格阵列</strong></li>
+<li>PGA封装一般是将集成电路（IC）焊接在一块电路板上，电路板的另一面是排列成方阵的插针</li>
+<li>插针可以插入或焊接到其他电路板上对应的插座中，适合于需要频繁插拔的场合</li>
+</ul>
+<h4 id="用途">用途</h4>
+<ul>
+<li>intel早期处理器曾使用PGA封装，如 <a href="https://zh.wikipedia.org/wiki/%E5%A5%94%E8%85%BE4">Intel Pentium 4</a> with 1.4 Ghz 1 Core 1 Thread</li>
+<li><a href="https://www.amd.com/en">AMD</a> 的绝大部分桌面级CPU采用PGA封装，仅有Ryzen Threadripper系列及服务器的EPYC等少量CPU为LGA封装。</li>
+</ul>
+<h3 id="bga-封装"># <strong>BGA</strong> 封装</h3>
+<ul>
+<li>Ball Grid Array 即<strong>球栅阵列封装</strong></li>
+<li>BGA封装常用来永久性固定如微处理器之类的的装置</li>
+<li>BGA封装能提供比其他如<strong>双列直插封装</strong>或<strong>四侧引脚扁平封装</strong>所容纳更多的接脚</li>
+<li>BGA封装技术提供<strong>低电感引脚</strong>，在封装与PCB之间的距离非常短，有了低电感引脚，相较于针脚装置能有更优异的电子特性</li>
+</ul>
+<h4 id="用途-2">用途</h4>
+<ul>
+<li>绝大多数笔记本电脑都采用BGA封装</li>
+</ul>
+<h3 id="lga-封装"># <strong>LGA</strong> 封装</h3>
+<ul>
+<li>Land Grid Array 即<strong>平面网格阵列封装</strong></li>
+<li>LGA封装的特点在于其针脚是位于插座上而非集成电路上。LGA封装的芯片能被连接到印刷电路板（PCB）上或直接焊接至电路板上</li>
+<li>LGA封装与传统针脚在集成电路上的封装方式相比，可减少针脚损坏的问题并可增加脚位</li>
+</ul>
+<h4 id="用途-3">用途</h4>
+<ul>
+<li>Intel 的绝大多数桌面级处理器均采用LGA封装</li>
+<li>AMD 和 IBM 也曾采用过LGA封装，如 AMD 的 Socket TR4 (Zen2) 和 IBM 的 Power 8</li>
+</ul>
+<h3 id="plcc-封装-即-塑料芯片载体"># <strong>PLCC</strong> 封装 即 塑料芯片载体</h3>
+<ul>
+<li>Plastic Leaded Chip Carrier</li>
+<li>PLCC封装在正方形的封装四边都有接脚，相比起其内部用来挂载集成电路的空腔来，整个封装所占体积较大</li>
+<li>PLCC封装为32引脚</li>
+</ul>
+<h3 id="mcm-封装"># <strong>MCM</strong> 封装</h3>
+<ul>
+<li>Multi-Chip Module 即<strong>多芯片模组</strong></li>
+<li>在MCM未发创前，一个封装内多半只有一个裸晶</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hackintosh on intel G41 with 775/771 CPU]]></title>
         <id>https://whuosu.github.io/post/hackintosh/</id>
@@ -73,17 +139,17 @@
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2085256"><label class="task-list-item-label" for="task-item-2085256"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5788518"><label class="task-list-item-label" for="task-item-5788518"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7540005"><label class="task-list-item-label" for="task-item-7540005"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1727009"><label class="task-list-item-label" for="task-item-1727009"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-145289"><label class="task-list-item-label" for="task-item-145289"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5055976"><label class="task-list-item-label" for="task-item-5055976"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9942992"><label class="task-list-item-label" for="task-item-9942992"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-242248"><label class="task-list-item-label" for="task-item-242248"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6921125"><label class="task-list-item-label" for="task-item-6921125"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3867820"><label class="task-list-item-label" for="task-item-3867820">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1223243"><label class="task-list-item-label" for="task-item-1223243">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5626084"><label class="task-list-item-label" for="task-item-5626084"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-440049"><label class="task-list-item-label" for="task-item-440049"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1512720"><label class="task-list-item-label" for="task-item-1512720"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2631953"><label class="task-list-item-label" for="task-item-2631953"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7737411"><label class="task-list-item-label" for="task-item-7737411"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4514311"><label class="task-list-item-label" for="task-item-4514311"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4260930"><label class="task-list-item-label" for="task-item-4260930"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5997355"><label class="task-list-item-label" for="task-item-5997355"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-266836"><label class="task-list-item-label" for="task-item-266836"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-194482"><label class="task-list-item-label" for="task-item-194482">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-164011"><label class="task-list-item-label" for="task-item-164011">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
