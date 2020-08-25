@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://whuosu.github.io</id>
+    <id>http://whuosu.github.io</id>
     <title>Shuo</title>
-    <updated>2020-08-25T02:35:48.743Z</updated>
+    <updated>2020-08-25T02:36:07.798Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://whuosu.github.io"/>
-    <link rel="self" href="https://whuosu.github.io/atom.xml"/>
+    <link rel="alternate" href="http://whuosu.github.io"/>
+    <link rel="self" href="http://whuosu.github.io/atom.xml"/>
     <subtitle>我的故事写不进作文</subtitle>
-    <logo>https://whuosu.github.io/images/avatar.png</logo>
-    <icon>https://whuosu.github.io/favicon.ico</icon>
+    <logo>http://whuosu.github.io/images/avatar.png</logo>
+    <icon>http://whuosu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Shuo</rights>
     <entry>
         <title type="html"><![CDATA[集成电路封装方式简介]]></title>
-        <id>https://whuosu.github.io/post/packagefunction/</id>
-        <link href="https://whuosu.github.io/post/packagefunction/">
+        <id>http://whuosu.github.io/post/packagefunction/</id>
+        <link href="http://whuosu.github.io/post/packagefunction/">
         </link>
         <updated>2020-08-24T15:02:31.000Z</updated>
         <summary type="html"><![CDATA[<p>本文主要介绍现代半导体行业<strong>芯片</strong>主要的封装方式。</p>
@@ -78,8 +78,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hackintosh on intel G41 with 775/771 CPU]]></title>
-        <id>https://whuosu.github.io/post/hackintosh/</id>
-        <link href="https://whuosu.github.io/post/hackintosh/">
+        <id>http://whuosu.github.io/post/hackintosh/</id>
+        <link href="http://whuosu.github.io/post/hackintosh/">
         </link>
         <updated>2020-08-23T11:03:45.000Z</updated>
         <summary type="html"><![CDATA[<p>A Hackintosh is a computer that runs an Apple Macintosh operating system on computer hardware not authorized for the purpose by Apple. This passage is to introduce using intel G41 series motherboard hackintosh on a low budget.</p>
@@ -139,17 +139,17 @@
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8656071"><label class="task-list-item-label" for="task-item-8656071"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9797415"><label class="task-list-item-label" for="task-item-9797415"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6446968"><label class="task-list-item-label" for="task-item-6446968"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7093056"><label class="task-list-item-label" for="task-item-7093056"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5826354"><label class="task-list-item-label" for="task-item-5826354"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7385626"><label class="task-list-item-label" for="task-item-7385626"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6555121"><label class="task-list-item-label" for="task-item-6555121"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6695595"><label class="task-list-item-label" for="task-item-6695595"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9559558"><label class="task-list-item-label" for="task-item-9559558"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1854131"><label class="task-list-item-label" for="task-item-1854131">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5491695"><label class="task-list-item-label" for="task-item-5491695">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8171711"><label class="task-list-item-label" for="task-item-8171711"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9915049"><label class="task-list-item-label" for="task-item-9915049"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8382493"><label class="task-list-item-label" for="task-item-8382493"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8299187"><label class="task-list-item-label" for="task-item-8299187"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5348266"><label class="task-list-item-label" for="task-item-5348266"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6563684"><label class="task-list-item-label" for="task-item-6563684"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1021932"><label class="task-list-item-label" for="task-item-1021932"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3425733"><label class="task-list-item-label" for="task-item-3425733"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7894782"><label class="task-list-item-label" for="task-item-7894782"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9500443"><label class="task-list-item-label" for="task-item-9500443">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6661494"><label class="task-list-item-label" for="task-item-6661494">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
@@ -201,8 +201,8 @@ Opencore: <a href="https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-gu
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello, World!]]></title>
-        <id>https://whuosu.github.io/post/helloworld/</id>
-        <link href="https://whuosu.github.io/post/helloworld/">
+        <id>http://whuosu.github.io/post/helloworld/</id>
+        <link href="http://whuosu.github.io/post/helloworld/">
         </link>
         <updated>2019-08-21T12:36:45.000Z</updated>
         <content type="html"><![CDATA[<pre><code class="language-python">print(&quot;hello, world!&quot;.title())
