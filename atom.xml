@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://whuosu.github.io</id>
     <title>Shuo</title>
-    <updated>2020-08-26T10:36:28.322Z</updated>
+    <updated>2020-08-27T12:17:54.085Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://whuosu.github.io"/>
     <link rel="self" href="https://whuosu.github.io/atom.xml"/>
@@ -10,6 +10,101 @@
     <logo>https://whuosu.github.io/images/avatar.png</logo>
     <icon>https://whuosu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[基于 Fluent Terminal 和 WSL 的 Windows 命令行工具]]></title>
+        <id>https://whuosu.github.io/post/ji-yu-fluent-terminal-he-wsl-de-windows-kai-fa-huan-jing/</id>
+        <link href="https://whuosu.github.io/post/ji-yu-fluent-terminal-he-wsl-de-windows-kai-fa-huan-jing/">
+        </link>
+        <updated>2020-08-27T02:05:09.000Z</updated>
+        <summary type="html"><![CDATA[<p>嘿，我打赌你一定会喜欢这些优雅的东西！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>嘿，我打赌你一定会喜欢这些优雅的东西！</p>
+<!-- more -->
+<blockquote>
+<p>适用于 Linux 的 Windows 子系统（英语：Windows Subsystem for Linux，简称WSL）是一个为在Windows 10和Windows Server 2019上能够原生运行Linux二进制可执行文件（ELF格式）的兼容层。----维基百科</p>
+</blockquote>
+<h3 id="效果图演示"># <strong>效果图演示</strong></h3>
+<figure data-type="image" tabindex="1"><img src="https://ae02.alicdn.com/kf/Uc8c65723ec154504b0a109fcb2d5b9a1F.jpg" alt="wsl.jpg" title="Fluent Terminal" loading="lazy"></figure>
+<h3 id="安装-windows-fluent-terminal-来取代古老的-cmd"># <strong>安装 Windows Fluent Terminal 来取代古老的 CMD</strong></h3>
+<ul>
+<li>在 <a href="https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">Microsoft Sore</a>或<a href="https://github.com/microsoft/terminal">Github</a>开源社区下载 Windows Fluent Terminal 。</li>
+<li>赶紧开启 <strong>亚克力</strong>/ <strong>Acrylic背景</strong>或者添加您喜爱的图片设为背景</li>
+</ul>
+<h3 id="windows-和-linux-是天生一对"># <strong>Windows 和 Linux 是天生一对</strong></h3>
+<blockquote>
+<p><strong>Microsoft love Linux</strong><br>
+--Microsoft CEO Satya Nadella</p>
+</blockquote>
+<p>在 Windows 安装<strong>适用于Linux 的 Windows 子系统</strong>，不仅可以保留 Windows 个人电脑的便捷，同时享受到 Linux 更加便捷的开发环境和开放的软件环境。</p>
+<h4 id="坐稳了我们要正式开始安装wsl了">坐稳了，我们要正式开始安装<strong>WSL</strong>了</h4>
+<ul>
+<li>在微软商店里下载 <a href="https://www.microsoft.com/zh-cn/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab"><strong>Ubuntu 18.4 LTS</strong></a>系统或是其他你喜欢的  <strong>Linux 子系统</strong></li>
+<li>它会出现在我们的开始菜单栏中，但这并不是我们所需要的</li>
+<li>朋友，这时候微软的自家软件就得开始团结协作了，打开 Windows Fluent Terminal 的菜单，你就能看到 Ubuntu 18.4 LTS 的身影了</li>
+</ul>
+<h3 id="谁说-linux-不能姹紫嫣红"># <strong>谁说 Linux 不能姹紫嫣红</strong></h3>
+<p>现在你也许会想，为什么我的 Linux 没有<strong>五颜六色的代码</strong>，也许更专业地说是代码高亮。</p>
+<h4 id="让-oh-my-zsh-给命令行锦上添花">让 <strong>oh-my-zsh</strong> 给命令行锦上添花</h4>
+<ul>
+<li>跟随 <a href="https://github.com/ohmyzsh/ohmyzsh">Github</a> 开源项目指南，让您的 Linux 配备oh-my-zsh</li>
+</ul>
+<ol>
+<li>使用 Git 从Github 上克隆到本地 或者 通过Github Desktop 手动下载<pre><code>git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh 
+</code></pre>
+</li>
+<li>使用 Windows Fluent Terminal 试试 <strong>cp</strong> 命令的复制上传功能吧<pre><code class="language-shell"># wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo [19:24:45]
+$ cd Desktop
+
+# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:25:21]
+$ cp ohmyzsh-master.zip /home/wushuo
+
+# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:27:21]
+$ cd /home/wushuo
+
+# wushuo @ DESKTOP-91UDQ1D in ~ [19:27:36]
+$ ls
+ohmyzsh-master.zip
+</code></pre>
+</li>
+<li>解压文件并运行 <strong>oh-my-zsh.sh</strong><pre><code class="language-shell"># wushuo @ DESKTOP-91UDQ1D in ~ [19:27:50]
+$ gzip ohmyzsh-master.zip
+
+# wushuo @ DESKTOP-91UDQ1D in ohmyzsh-master [19:27:51]
+$ sudo ./ohmyzsh.sh
+</code></pre>
+</li>
+<li>现在将zsh设为默认shell即可<pre><code class="language-shell">chsh -s $(which zsh)
+</code></pre>
+</li>
+</ol>
+<h3 id="这是-oh-my-zsh独一无二的zsh"># <strong>这是 oh my zsh，独一无二的zsh</strong></h3>
+<ul>
+<li>现在为 oh-my-zsh 设定你喜爱的主题<pre><code class="language-shell">vim ~/.zshrc
+</code></pre>
+</li>
+<li>更改你喜爱的主题通过如 <code>ZHS_THEME=&quot;ys&quot;</code><pre><code class="language-shell">ZSH_THEME=&quot;agnoster&quot; # (this is one of the fancy ones)
+# see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
+</code></pre>
+</li>
+</ul>
+<h4 id="不仅如此你也可以通过-windows-fluent-terminal-更改配色">不仅如此，你也可以通过 Windows Fluent Terminal 更改配色</h4>
+<ul>
+<li>默认的设置一直都不错，除非你更偏爱<strong>白色的清晰</strong>，那样 <strong>Tomorrow</strong> 也许才是你的菜<br>
+<img src="https://ae04.alicdn.com/kf/U4b7a944b71274998ab49d07d7890ec46w.jpg" alt="wsl2.jpg" title="Theme Tomorrow" loading="lazy"></li>
+</ul>
+<h3 id="你知道吗git-和-wsl-协作无可匹敌"># <strong>你知道吗，Git 和 WSL 协作无可匹敌</strong></h3>
+<ul>
+<li>还在忍受 <strong>Windows</strong> 上不优雅的 <strong>git</strong> 工具吗，现在投奔 <strong>WSL</strong> 和 <strong>Linux 原生 git</strong> 的怀抱</li>
+<li>通过 <strong>WSL</strong> 对 Windows 的映射，您可以轻松使用 <strong>WSL</strong> 访问主机的资源，<strong>git</strong> 也毫不例外<pre><code class="language-shell">### 通过 git 将图形学项目 Taichi 克隆到本地
+# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:57:39]
+$ git clone https://github.com/taichi-dev/taichi
+</code></pre>
+</li>
+</ul>
+<h3 id="感谢您的认真观看我衷心地希望这对您有些许帮助"><strong>感谢您的认真观看，我衷心地希望这对您有些许帮助</strong></h3>
+<h6 id="转载请注明作者及出处">转载请注明作者及出处</h6>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[集成电路封装方式简介]]></title>
         <id>https://whuosu.github.io/post/packagefunction/</id>
@@ -139,17 +234,17 @@
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5767890"><label class="task-list-item-label" for="task-item-5767890"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4304289"><label class="task-list-item-label" for="task-item-4304289"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-129705"><label class="task-list-item-label" for="task-item-129705"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1716671"><label class="task-list-item-label" for="task-item-1716671"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8081754"><label class="task-list-item-label" for="task-item-8081754"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5147853"><label class="task-list-item-label" for="task-item-5147853"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2650430"><label class="task-list-item-label" for="task-item-2650430"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5299735"><label class="task-list-item-label" for="task-item-5299735"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4988524"><label class="task-list-item-label" for="task-item-4988524"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8454055"><label class="task-list-item-label" for="task-item-8454055">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5698412"><label class="task-list-item-label" for="task-item-5698412">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7536378"><label class="task-list-item-label" for="task-item-7536378"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9679188"><label class="task-list-item-label" for="task-item-9679188"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7292384"><label class="task-list-item-label" for="task-item-7292384"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1453390"><label class="task-list-item-label" for="task-item-1453390"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3413881"><label class="task-list-item-label" for="task-item-3413881"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5563709"><label class="task-list-item-label" for="task-item-5563709"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9719894"><label class="task-list-item-label" for="task-item-9719894"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2802022"><label class="task-list-item-label" for="task-item-2802022"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9939301"><label class="task-list-item-label" for="task-item-9939301"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-653887"><label class="task-list-item-label" for="task-item-653887">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4948793"><label class="task-list-item-label" for="task-item-4948793">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
