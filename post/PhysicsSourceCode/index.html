@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>孤独才是人生常态 | Shuo</title>
+<title>大学物理拓展公式不完全收录源码 | Shuo</title>
 <link rel="shortcut icon" href="https://whuosu.github.io/favicon.ico?v=1601548855867">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://whuosu.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="孤独才是人生常态 | Shuo - Atom Feed" href="https://whuosu.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="大学物理拓展公式不完全收录源码 | Shuo - Atom Feed" href="https://whuosu.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
@@ -20,12 +20,14 @@
 </script>
 
 
-    <meta name="description" content="
-刚入大学，我感到孤独。
+    <meta name="description" content="参考教材: 
+- 物理学(第六版) 高等教育出版社
+- 物理学 A/D 教学目标测试手册 北京林业大学理学院物理教研室
 
-#  我的孤独肯定有恋家
-" />
-    <meta name="keywords" content="随笔,生活" />
+## \# 恒定磁场
+\# 电流强度 $I = {\rm d}q/{\rm d}t = nqsv = js$
+- $q..." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -99,47 +101,85 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              孤独才是人生常态
+              大学物理拓展公式不完全收录源码
             </h2>
             <div class="post-info">
               <span>
-                2020-08-30
+                2020-10-01
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
-              
-                <a href="https://whuosu.github.io/tag/wkS4Y-XQX/" class="post-tag">
-                  # 随笔
-                </a>
-              
-                <a href="https://whuosu.github.io/tag/ewbje6RVj/" class="post-tag">
-                  # 生活
-                </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <blockquote>
-<p>刚入大学，我感到孤独。</p>
-</blockquote>
-<h3 id="我的孤独肯定有恋家">#  我的孤独肯定有恋家</h3>
+                <pre><code class="language-markdown">参考教材: 
+- 物理学(第六版) 高等教育出版社
+- 物理学 A/D 教学目标测试手册 北京林业大学理学院物理教研室
+
+## \# 恒定磁场
+\# 电流强度 $I = {\rm d}q/{\rm d}t = nqsv = js$
+- $q$ 为单位时间 $t$ 内通过某一截面的电荷
+- $n$ 为电荷数目, $v$ 为电荷速度, $s$ 为截面积, $q$ 为电荷量大小
+- $j$ 为电流密度, $s$ 为截面积, 积分形式为$\int_S{\vec{j}}{\cdot}{{\rm d}\vec{s}}$
+
+---
+
+\# 规定磁感应强度 $\vec{B} = F_{max} / (q_0v)$
+
+---
+
+**\# Biot-Savart 定律** $\mu_0 = 4\pi \times 10^{-7} N / A^2$
+  
+电流元的磁场
+$${\rm d}\vec{B}=\frac{\mu_0}{4\pi}\cdot \frac{I{\rm d}\vec{l}\times \vec{r}}{r^3}$$
+有限长直导线的磁场 
+$$B = \frac{\mu_0 I}{4\pi r_0}(cos\theta_1-cos\theta_2)$$
+无限长直导线的磁场
+$$B = \frac{\mu_0 I}{2\pi r_0}$$
+半无限长直导线的磁场
+$$B = \frac{\mu_0 I}{2\pi r_0}$$
+半径为$R$的圆形载流导线在中心轴线方向的磁场
+**笔者注**: $x$为所求磁感应强度到圆形载流导线所在平面的距离
+$$B= \frac{\mu_0IR^2}{2(x^2+R^2)^{\frac{3}{2}}}$$
+载流长直螺线管内的磁场
+$$B= \mu_0nI$$
+载流半无限长直螺线管内磁场
+$$B=\frac{1}{2}\mu_0nI$$
+**无限大导电平面两侧磁感应强度**
+$$ B = \frac{1}{2}\mu_0j$$
+
+---
+
+\# 磁通量$\phi$
+$${\rm d}\phi = \vec{B}\cdot{\rm d}\vec{S}$$
+
+---
+
+**\# Ampere Circuital 定理**
+$$\int_L \vec{B} \times {\rm d} \vec{l} = \mu_0\sum_{i=1}^{n} I$$
+
+---
+
+\# 洛伦兹力
+**笔者注:** 使用左手定则判断方向
+$$\vec{F}_{max} = q\vec{v}\times\vec{B}$$
+
+---
+
+\# 安培力 即电流元受磁场作用力
+$${\rm d}\vec{F} = I{\rm d}\vec{l} \times \vec{B}$$
+
+--- 
+
+### \# 笔者注: 这篇整理并没有完结, 最后一次更新时间为 10/01/2020
+</code></pre>
 
               </div>
               <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#%E6%88%91%E7%9A%84%E5%AD%A4%E7%8B%AC%E8%82%AF%E5%AE%9A%E6%9C%89%E6%81%8B%E5%AE%B6">#  我的孤独肯定有恋家</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
+                
               </div>
             </div>
           </article>
