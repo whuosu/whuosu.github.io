@@ -1,0 +1,593 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Java 开发与实践 上机作业 | Shuo</title>
+<link rel="shortcut icon" href="https://whuosu.github.io/favicon.ico?v=1602930443180">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://whuosu.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Java 开发与实践 上机作业 | Shuo - Atom Feed" href="https://whuosu.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176554816-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176554816-1');
+</script>
+
+
+    <meta name="description" content="这是一篇🔒隐藏文章🔒哦，很高兴被你发现😁🍡🍭🍾🥧🍦🍧🍨🧁
+不管晴天🌞还是雨天💧，亦或狂风🌀暴雨🌊霹雳⚡霜寒🥼，希望这样的幸运🌈在你身上一直发生
+
+
+北 京 林 业 大 学
+2018学年—2019学年第 一 ..." />
+    <meta name="keywords" content="学习,技术" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://whuosu.github.io">
+  <img class="avatar" src="https://i.loli.net/2020/09/14/Y8M2eofdb9mvZQV.png" alt="ProfileLite.png">
+  </a>
+  <h1 class="site-title">
+    Shuo
+  </h1>
+  <p class="site-description">
+    我的故事写不进作文
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+      
+        <a href="https://whuosu.top" class="menu" target="_blank">
+          简历
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/whuosu" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/SuWhuo" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://www.zhihu.com/people/xbao-bao-28" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Java 开发与实践 上机作业
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-10-17
+              </span>
+              <span>
+                6 min read
+              </span>
+              
+                <a href="https://whuosu.github.io/tag/academic/" class="post-tag">
+                  # 学习
+                </a>
+              
+                <a href="https://whuosu.github.io/tag/Jt3X4OUk5/" class="post-tag">
+                  # 技术
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>这是一篇🔒隐藏文章🔒哦，很高兴被你发现😁🍡🍭🍾🥧🍦🍧🍨🧁<br>
+不管晴天🌞还是雨天💧，亦或狂风🌀暴雨🌊霹雳⚡霜寒🥼，希望这样的幸运🌈在你身上一直发生</p>
+<!-- more -->
+<hr>
+<div align='center'><font size=6>北 京 林 业 大 学</font></div>
+<div align='center' ><font size='5'>2018学年—2019学年第 一 学期 Java开发与实践
+</font></div>
+<div align='center' ><font size='6'>实 验 报 告 书</font></div>
+<h5 id="专-业电子信息科学与技术">专		  业：电子信息科学与技术</h5>
+<h5 id="班-级电子192">班		  级：电子192</h5>
+<h5 id="姓-名吴硕">姓		  名：吴硕</h5>
+<h5 id="学-号190602119">学		  号：190602119</h5>
+<h5 id="实验地点计算中心-5">实验地点：计算中心-5</h5>
+<h5 id="任课老师李鑫伟">任课老师：李鑫伟</h5>
+<h5 id="实验题目java编程基础">实验题目：Java编程基础</h5>
+<h5 id="实验环境eclipse">实验环境：Eclipse</h5>
+<h5 id="实验内容">实验内容：</h5>
+<h5 id="4-22">4-22</h5>
+<pre><code class="language-java">package com.abstractclass.www;
+
+public class Rectangle extends Shape {
+	float r;
+
+	@Override
+	double area(double r) {
+		// TODO Auto-generated method stub
+		return r*r*3.14159;
+	}
+
+	@Override
+	double circlestance(double r) {
+		// TODO Auto-generated method stub
+		return 2*3.1415926*r;
+	}
+	
+}
+</code></pre>
+<pre><code class="language-java">package com.abstractclass.www;
+
+public abstract class Shape {
+	
+	abstract double area(double r) ;
+	abstract double circlestance(double r);
+	float area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
+</code></pre>
+<pre><code class="language-java">package com.abstractclass.www;
+
+public class Rectangle extends Shape {
+	float r;
+
+	@Override
+	double area(double r) {
+		// TODO Auto-generated method stub
+		return r*r*3.14159;
+	}
+
+	@Override
+	double circlestance(double r) {
+		// TODO Auto-generated method stub
+		return 2*3.1415926*r;
+	}
+	
+	
+}
+
+</code></pre>
+<h5 id="实验结果">实验结果</h5>
+<pre><code>50.26544
+3.1415926
+</code></pre>
+<h5 id="4-23">4-23</h5>
+<pre><code class="language-java">package com.classtask.www;
+
+public class Animal {
+	String name;
+	String color;
+	
+	public Animal(String name, String color) {
+		this.name = name;
+		this.color = color;
+	}
+	
+	public void introduce() {
+		System.out.println(&quot;I'm &quot; + name + &quot;, I'm &quot; + color);
+	}
+	
+	public void iDoThing() {
+		System.out.println(&quot;I'm eating...&quot;);
+	
+</code></pre>
+<pre><code class="language-java">package com.classtask.www;
+
+public class Dog extends Animal{
+
+	public Dog(String name, String color) {
+		super(name, color);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void iDoThing() {
+		// TODO Auto-generated method stub
+		System.out.println(&quot;I'm eating meat...&quot;);
+	}
+}
+</code></pre>
+<pre><code class="language-java">
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Animal zhaocai = new Animal(&quot;zhaocai&quot;, &quot;colorful&quot;);
+		zhaocai.iDoThing();
+		zhaocai.introduce();
+		
+		Dog wangcai = new Dog(&quot;wangcai&quot;, &quot;darkest black&quot;);
+		wangcai.iDoThing();
+		wangcai.introduce();
+	}
+
+}
+</code></pre>
+<h5 id="实验结果-2">实验结果</h5>
+<pre><code>I'm eating...
+I'm zhaocai, I'm colorful
+I'm eating meat...
+I'm wangcai, I'm darkest black
+
+</code></pre>
+<h5 id="交通工具类">交通工具类</h5>
+<pre><code class="language-java">package com.transportation.www;
+
+public class Airplane extends Transportation {
+	
+	public Airplane(String name, int num) {
+		super(name, num);
+		
+	}
+	public void transportationOut() {
+		System.out.println(&quot;Above air&quot;);
+	}
+}
+
+</code></pre>
+<pre><code class="language-java">package com.transportation.www;
+
+public class Boat extends Transportation {
+
+	public Boat(String name, int num) {
+		super(name, num);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void transportationOut() {
+		System.out.println(&quot;On Ocean&quot;);
+	}
+
+}
+
+</code></pre>
+<pre><code class="language-java">package com.transportation.www;
+
+public class Bus extends Transportation {
+
+	public Bus(String name, int num) {
+		super(name, num);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void transportationOut() {
+		System.out.println(&quot;on land&quot;);
+	}
+
+}
+
+</code></pre>
+<pre><code class="language-java">package com.transportation.www;
+
+public class Transportation {
+	private String name;
+	private int num;
+	public Transportation(String name, int num) {
+		this.name = name;
+		this.num = num;
+	}
+	
+	public void take() {
+		System.out.println(name +&quot;  &quot;+ num);
+	}  
+}
+
+</code></pre>
+<pre><code class="language-java">package com.transportation.www;
+
+public class MainTest {
+
+	public static void main(String[] args) {
+		Boat boat = new Boat(&quot;ship&quot;, 200);
+		Airplane air747 = new Airplane(&quot;Air747&quot;, 500);
+		tool(boat);
+		tool(air747);
+	}
+	
+	public static void tool(Transportation trans) {
+		trans.take();
+		if (trans instanceof Bus) {
+			trans = (Bus)trans;
+			((Bus)trans).transportationOut();
+		}
+		if (trans instanceof Boat) {
+			trans = (Boat)trans;
+			((Boat) trans).transportationOut();
+		}
+		if (trans instanceof Airplane) {
+			trans = (Airplane)trans;
+			((Airplane)trans).transportationOut();
+		}
+	}
+}
+</code></pre>
+<h5 id="实验结果-3">实验结果</h5>
+<pre><code>ship  200
+On Ocean
+Air747  500
+Above air
+</code></pre>
+<h5 id="任务4-1">任务4-1</h5>
+<pre><code class="language-java">package com.whuosu.www;
+
+public class Computer {
+	private USB[] usbArr = new USB[4];
+	
+	public void add(USB usb) {
+		for (int i = 0; i &lt; usbArr.length; i = i + 1) {
+			if (usbArr[i] == null) {
+				usbArr[i] = usb;
+				break;
+			}
+		}
+	}
+	
+	public void powerOn() {
+		for (int i = 0; i &lt; usbArr.length; i++) {
+			if (usbArr[i] != null) {
+				usbArr[i].turnOn();
+			}
+		}
+		
+		System.out.println(&quot;Computer PowerOn Successfully&quot;);
+	}
+	
+	public void powerOff() {
+		for (int i = 0; i &lt; usbArr.length; i++) {
+			if (usbArr[i] != null) {
+				usbArr[i].turnOff();
+			}
+		}
+		System.out.println(&quot;Computer Shutdown Successfully&quot;);
+	}
+}
+
+</code></pre>
+<pre><code class="language-java">package com.whuosu.www;
+
+public class Keyboard implements USB {
+
+
+	public void turnOn() {
+		System.out.println(&quot;Keyboard turned on&quot;);
+	}
+
+	public void turnOff() {
+		System.out.println(&quot;Keyboard turned off&quot;);
+
+	}
+
+}
+
+</code></pre>
+<pre><code class="language-java">package com.whuosu.www;
+
+public class Microphone implements USB {
+
+
+	public void turnOn() {
+		// TODO Auto-generated method stub
+		System.out.println(&quot;Microphone turned on&quot;);
+	}
+
+
+	public void turnOff() {
+		// TODO Auto-generated method stub
+		System.out.println(&quot;Microphone turned off&quot;);
+	}
+
+}
+
+</code></pre>
+<pre><code class="language-java">package com.whuosu.www;
+
+public class Mouse implements USB {
+
+
+	public void turnOn() {
+		// TODO Auto-generated method stub
+		System.out.println(&quot;Mouse turned on&quot;);
+
+	}
+
+
+	public void turnOff() {
+		// TODO Auto-generated method stub
+		System.out.println(&quot;Mouse turned off&quot;);
+
+	}
+
+}
+
+</code></pre>
+<pre><code class="language-java">package com.whuosu.www;
+
+public interface USB {
+	void turnOn();
+	void turnOff();
+}
+
+</code></pre>
+<pre><code class="language-java">package com.whuosu.www;
+
+public class Task01 {
+	public static void main(String[] args) {
+		Computer c = new Computer()	;
+		c.add(new Mouse());
+		c.add(new Microphone());
+		c.add(new Keyboard());
+		c.powerOn();
+		System.out.println();
+		c.powerOff();
+	}
+}
+
+</code></pre>
+<pre><code class="language-java">Mouse turned on
+Microphone turned on
+Keyboard turned on
+Computer PowerOn Successfully
+
+Mouse turned off
+Microphone turned off
+Keyboard turned off
+Computer Shutdown Successfully
+</code></pre>
+<h5 id="上机总结">上机总结</h5>
+<p>抽象方法是一种特殊的方法：它只有声明，而没有具体的实现。抽象方法的声明格式为：</p>
+<pre><code class="language-java">abstract void fun();
+</code></pre>
+<p>抽象方法必须用<strong>abstract</strong>关键字进行修饰。如果一个类含有抽象方法，则称这个类为抽象类，抽象类必须在类前用<strong>abstract</strong>关键字修饰。<strong>因为抽象类中含有无具体实现的方法，所以不能用抽象类创建对象。</strong></p>
+<p>Java中，定一个接口的形式如下：</p>
+<pre><code class="language-java">[public] interface InterfaceName {
+ 
+}
+</code></pre>
+<p>接口中可以含有<strong>变量和方法</strong>, 接口是一种极度抽象的类型，它比抽象类更加“抽象”，并且一般情况下不在接口中定义变量。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E4%B8%93-%E4%B8%9A%E7%94%B5%E5%AD%90%E4%BF%A1%E6%81%AF%E7%A7%91%E5%AD%A6%E4%B8%8E%E6%8A%80%E6%9C%AF">专		  业：电子信息科学与技术</a></li>
+<li><a href="#%E7%8F%AD-%E7%BA%A7%E7%94%B5%E5%AD%90192">班		  级：电子192</a></li>
+<li><a href="#%E5%A7%93-%E5%90%8D%E5%90%B4%E7%A1%95">姓		  名：吴硕</a></li>
+<li><a href="#%E5%AD%A6-%E5%8F%B7190602119">学		  号：190602119</a></li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E5%9C%B0%E7%82%B9%E8%AE%A1%E7%AE%97%E4%B8%AD%E5%BF%83-5">实验地点：计算中心-5</a></li>
+<li><a href="#%E4%BB%BB%E8%AF%BE%E8%80%81%E5%B8%88%E6%9D%8E%E9%91%AB%E4%BC%9F">任课老师：李鑫伟</a></li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E9%A2%98%E7%9B%AEjava%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80">实验题目：Java编程基础</a></li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83eclipse">实验环境：Eclipse</a></li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E5%86%85%E5%AE%B9">实验内容：</a></li>
+<li><a href="#4-22">4-22</a></li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C">实验结果</a></li>
+<li><a href="#4-23">4-23</a></li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C-2">实验结果</a></li>
+<li><a href="#%E4%BA%A4%E9%80%9A%E5%B7%A5%E5%85%B7%E7%B1%BB">交通工具类</a></li>
+<li><a href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C-3">实验结果</a></li>
+<li><a href="#%E4%BB%BB%E5%8A%A14-1">任务4-1</a></li>
+<li><a href="#%E4%B8%8A%E6%9C%BA%E6%80%BB%E7%BB%93">上机总结</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by&nbsp;
+<a href="https://gridea.dev/" target="_blank">Gridea</a>
+  <a class="rss" href="https://whuosu.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
