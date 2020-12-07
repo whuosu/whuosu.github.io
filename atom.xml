@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://whuosu.github.io</id>
     <title>Shuo</title>
-    <updated>2020-11-24T11:05:06.779Z</updated>
+    <updated>2020-12-07T15:57:16.017Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://whuosu.github.io"/>
     <link rel="self" href="https://whuosu.github.io/atom.xml"/>
@@ -414,17 +414,17 @@ $ git clone https://github.com/taichi-dev/taichi
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2654951"><label class="task-list-item-label" for="task-item-2654951"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7617123"><label class="task-list-item-label" for="task-item-7617123"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1136677"><label class="task-list-item-label" for="task-item-1136677"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7013074"><label class="task-list-item-label" for="task-item-7013074"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1271486"><label class="task-list-item-label" for="task-item-1271486"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5806841"><label class="task-list-item-label" for="task-item-5806841"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5880268"><label class="task-list-item-label" for="task-item-5880268"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4355924"><label class="task-list-item-label" for="task-item-4355924"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7538702"><label class="task-list-item-label" for="task-item-7538702"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-716597"><label class="task-list-item-label" for="task-item-716597">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5777348"><label class="task-list-item-label" for="task-item-5777348">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2065651"><label class="task-list-item-label" for="task-item-2065651"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1682614"><label class="task-list-item-label" for="task-item-1682614"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4673507"><label class="task-list-item-label" for="task-item-4673507"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9969331"><label class="task-list-item-label" for="task-item-9969331"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-537950"><label class="task-list-item-label" for="task-item-537950"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2439340"><label class="task-list-item-label" for="task-item-2439340"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7177737"><label class="task-list-item-label" for="task-item-7177737"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2020063"><label class="task-list-item-label" for="task-item-2020063"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-278154"><label class="task-list-item-label" for="task-item-278154"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6062161"><label class="task-list-item-label" for="task-item-6062161">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-363895"><label class="task-list-item-label" for="task-item-363895">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
@@ -472,6 +472,16 @@ $ git clone https://github.com/taichi-dev/taichi
 Github: <a href="https://github.com/daliansky/Hackintosh">hackintosh model collection</a><br>
 tonymacx86: <a href="https://en.wikipedia.org/wiki/Hackintosh">guide and forum of hackintosh</a><br>
 Opencore: <a href="https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/">brand new boot</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, World!]]></title>
+        <id>https://whuosu.github.io/post/hello-world/</id>
+        <link href="https://whuosu.github.io/post/hello-world/">
+        </link>
+        <updated>2020-08-21T12:36:45.000Z</updated>
+        <content type="html"><![CDATA[<pre><code class="language-python">print(&quot;hello, world!&quot;.title())
+</code></pre>
 ]]></content>
     </entry>
     <entry>
