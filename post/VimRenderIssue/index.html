@@ -1,0 +1,308 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vim 首行乱码问题解决方法 | Shuo</title>
+<link rel="shortcut icon" href="https://whuosu.github.io/favicon.ico?v=1607430635841">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://whuosu.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Vim 首行乱码问题解决方法 | Shuo - Atom Feed" href="https://whuosu.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176554816-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176554816-1');
+</script>
+
+
+    <meta name="description" content="在使用 Vim 时遇到了首行乱码形如+q436f+q6b75+q6b64，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 .vimrc 文件中添加 set t_RV= 确保 Vi..." />
+    <meta name="keywords" content="Vim,Linux,技术" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://whuosu.github.io">
+  <img class="avatar" src="https://i.loli.net/2020/09/14/Y8M2eofdb9mvZQV.png" alt="ProfileLite.png">
+  </a>
+  <h1 class="site-title">
+    Shuo
+  </h1>
+  <p class="site-description">
+    我的故事写不进作文
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/whuosu" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://twitter.com/SuWhuo" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://www.zhihu.com/people/xbao-bao-28" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Vim 首行乱码问题解决方法
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-12-08
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+                <a href="https://whuosu.github.io/tag/skGgZPdPe/" class="post-tag">
+                  # Vim
+                </a>
+              
+                <a href="https://whuosu.github.io/tag/RwybRooRH/" class="post-tag">
+                  # Linux
+                </a>
+              
+                <a href="https://whuosu.github.io/tag/Jt3X4OUk5/" class="post-tag">
+                  # 技术
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>在使用 Vim 时遇到了首行乱码形如<code>+q436f+q6b75+q6b64</code>，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 <code>.vimrc</code> 文件中添加 <code>set t_RV=</code> 确保 Vim 能够显示正确的内容。</p>
+<!-- more -->
+<ul>
+<li><a href="#%E9%97%AE%E9%A2%98%E5%A4%8D%E7%8E%B0">问题复现</a></li>
+<li><a href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">解决方案</a></li>
+<li><a href="#%E5%BC%95%E7%94%A8%E8%B5%84%E6%96%99">引用资料</a></li>
+<li><a href="#%E4%B8%80%E7%82%B9%E7%82%B9%E6%83%B3%E8%AF%B4%E7%9A%84%E8%AF%9D">想说些话</a></li>
+</ul>
+<hr>
+<h3 id="问题复现">问题复现</h3>
+<p>在我的 <strong>Linux</strong> 虚拟机 (<strong>WSL</strong>) 上运行 Vim 时总会在第一行出现一行乱码，在多次重装 Vim 无果后，终于在 Github 的 <a href="https://github.com/vercel/hyper"><strong>Hyper</strong></a> 项目上找到<a href="https://github.com/vercel/hyper/issues/1037"><strong>答案</strong></a>。</p>
+<p># 我的配置</p>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th>Vim</th>
+<th>Shell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ubuntu 18.04 LTS</td>
+<td>Vim 8.0</td>
+<td>zsh with oh-my-zsh</td>
+</tr>
+</tbody>
+</table>
+<p>目前已知的其他系统可能会存在相同的 Vim 问题：<br>
+<strong>OS X</strong> 10.12 (Sierra)<br>
+<strong>Arch Linux</strong></p>
+<p>在 <strong>WSL</strong> 上使用 Vim 后 (无论是否打开文件)，第一行会出现一行显示乱码，亦或称为<code>Broken first line rendering in VIM</code> (引用自 Github issues)</p>
+<pre><code class="language-bash">+q436f+q6b75+q6b64+q6b72+q6b6c+q2332+q2334+q2569+q2a37+q6b31
+                                VIM - Vi IMproved
+                                    
+                                version 8.0.1453
+                             by Bram Moolenaar et al. 
+                Modified by pkg-vim-maintainers@lists.alioth.debian.org
+                     Vim is open source and freely distributable
+                            
+                            Become a registered Vim user!
+                    type  :help register&lt;Enter&gt;   for information
+                    type  :q&lt;Enter&gt;               to exit
+                    type  :help&lt;Enter&gt;  or  &lt;F1&gt;  for on-line help
+                    type  :help version8&lt;Enter&gt;   for version info    
+</code></pre>
+<p>形如<code>+q436f+q6b75+q6b64+q6b72+q6b6c+q2332+q2334+q2569+q2a37+q6b31</code>这种乱码仅能通过<kbd>Ctrl + L</kbd>消除。</p>
+<hr>
+<h3 id="解决方案">解决方案</h3>
+<p>在 Terminal 内编辑 <code>.vimrc</code> 文件，并添加<code>set t_RV=</code>。</p>
+<pre><code class="language-bash"># wushuo @ DESKTOP-91UDQ1D in ~ [19:29:21] C:1
+$ vim ~/.vimrc
+</code></pre>
+<pre><code class="language-javascript">set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
+set fencs=utf-8,gbk
+
+### 设置下面这条的配置哦
+set t_RV=
+### 设置上面这条的配置哦
+
+call plug#begin('~/.vim/plugged')
+Plug 'dense-analysis/ale'
+call plug#end()         
+</code></pre>
+<p>再次打开 Vim，发现首行的渲染错误已经消失了。</p>
+<pre><code class="language-bash">
+                                VIM - Vi IMproved
+                                    
+                                version 8.0.1453
+                            by Bram Moolenaar et al. 
+                Modified by pkg-vim-maintainers@lists.alioth.debian.org
+                    Vim is open source and freely distributable
+                            
+                            Become a registered Vim user!
+                    type  :help register&lt;Enter&gt;   for information
+                    type  :q&lt;Enter&gt;               to exit
+                    type  :help&lt;Enter&gt;  or  &lt;F1&gt;  for on-line help
+                    type  :help version8&lt;Enter&gt;   for version info    
+</code></pre>
+<hr>
+<h3 id="引用资料">引用资料</h3>
+<p><strong>Hyper</strong> 项目下的 <strong>Github issues</strong> ：<br>
+<a href="https://github.com/vercel/hyper/issues/1037">Broken first line rendering in VIM (parseUntilStringTerminator_ aborts) #1037</a></p>
+<hr>
+<h3 id="一点点想说的话">一点点想说的话</h3>
+<p>一篇博客读起来的时间很短，特定内容的博客受众面少，写起来却异常花费时间。<br>
+驱使我写博客的目的是我能够静下心来思考，文字想要精炼，磨难也要经历。临近期末考试和四级考试，博客终于被捡起来写了一篇，维护了一下两个托管在 Github 上的静态站点，如果有时间，还能趁机打开一下 Gittalk 评论 (虽然我知道我的博客无人评论)。</p>
+<p>在北林的大二半年，过的很累，也并不充实，前几周看了 <a href="https://linghao.io">linghao</a> 的博客，发现自己消磨在不必要的事物上的时间太多了。来北京高铁上的写了一半的博客一直搁浅了，卸了知乎，闲来刷刷推特。看着手机的使用时间记录后，推特确实比知乎对时间和思维消耗比知乎少太多了。</p>
+<p>电子系明显比车辆系卷太多了，课程难且不说，精力的消耗难以避免，老师们似乎都沉浸在：“这门课这么难，我教的不错，很有深度，所以学生们收获许多”的幸福里。而我感到的只有 <strong>Push</strong> 。抛开一小部分做硬件的同学来说，学这么多门知识杂碎，耗费精力极高的高难度课程，是将试错成本拉低许多。一本 <strong>CSAPP</strong> 或是 一本 <strong>Algorithm</strong> 的时间就被浪费在”这门课好难，我要挂科了，得好好学习刷题“的时间里了。</p>
+<p>或许是我的时间没有被好好利用，又或许是电子系本身就要天天熬夜刷题才能通过，我对数电，模电和电分真的没什么感觉。相反，<strong>Rust</strong> 和 <strong>Apple GSX 认证</strong> 已经被我加入了提醒事项。我只想做个平凡人，或许平庸人也适合我。</p>
+<p>博客还得坚持写，英语也得坚持学，考试也得去考考。</p>
+<p>写于<br>
+模电考试前两天/四级考试前四天<br>
+北京林业大学 学12号楼</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E9%97%AE%E9%A2%98%E5%A4%8D%E7%8E%B0">问题复现</a></li>
+<li><a href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">解决方案</a></li>
+<li><a href="#%E5%BC%95%E7%94%A8%E8%B5%84%E6%96%99">引用资料</a></li>
+<li><a href="#%E4%B8%80%E7%82%B9%E7%82%B9%E6%83%B3%E8%AF%B4%E7%9A%84%E8%AF%9D">一点点想说的话</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://whuosu.github.io/post/PhysicsReview/">
+              <h3 class="post-title">
+                大学物理公式
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by&nbsp;
+<a href="https://gridea.dev/" target="_blank">Gridea</a>
+  <a class="rss" href="https://whuosu.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

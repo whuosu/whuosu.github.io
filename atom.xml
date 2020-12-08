@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://whuosu.github.io</id>
     <title>Shuo</title>
-    <updated>2020-12-08T02:05:21.270Z</updated>
+    <updated>2020-12-08T12:31:18.342Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://whuosu.github.io"/>
     <link rel="self" href="https://whuosu.github.io/atom.xml"/>
@@ -11,7 +11,113 @@
     <icon>https://whuosu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Shuo</rights>
     <entry>
-        <title type="html"><![CDATA[大学物理拓展公式不完全收录]]></title>
+        <title type="html"><![CDATA[Vim 首行乱码问题解决方法]]></title>
+        <id>https://whuosu.github.io/post/VimRenderIssue/</id>
+        <link href="https://whuosu.github.io/post/VimRenderIssue/">
+        </link>
+        <updated>2020-12-08T10:59:17.000Z</updated>
+        <summary type="html"><![CDATA[<p>在使用 Vim 时遇到了首行乱码形如<code>+q436f+q6b75+q6b64</code>，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 <code>.vimrc</code> 文件中添加 <code>set t_RV=</code> 确保 Vim 能够显示正确的内容。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在使用 Vim 时遇到了首行乱码形如<code>+q436f+q6b75+q6b64</code>，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 <code>.vimrc</code> 文件中添加 <code>set t_RV=</code> 确保 Vim 能够显示正确的内容。</p>
+<!-- more -->
+<ul>
+<li><a href="#%E9%97%AE%E9%A2%98%E5%A4%8D%E7%8E%B0">问题复现</a></li>
+<li><a href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">解决方案</a></li>
+<li><a href="#%E5%BC%95%E7%94%A8%E8%B5%84%E6%96%99">引用资料</a></li>
+<li><a href="#%E4%B8%80%E7%82%B9%E7%82%B9%E6%83%B3%E8%AF%B4%E7%9A%84%E8%AF%9D">想说些话</a></li>
+</ul>
+<hr>
+<h3 id="问题复现">问题复现</h3>
+<p>在我的 <strong>Linux</strong> 虚拟机 (<strong>WSL</strong>) 上运行 Vim 时总会在第一行出现一行乱码，在多次重装 Vim 无果后，终于在 Github 的 <a href="https://github.com/vercel/hyper"><strong>Hyper</strong></a> 项目上找到<a href="https://github.com/vercel/hyper/issues/1037"><strong>答案</strong></a>。</p>
+<p># 我的配置</p>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th>Vim</th>
+<th>Shell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ubuntu 18.04 LTS</td>
+<td>Vim 8.0</td>
+<td>zsh with oh-my-zsh</td>
+</tr>
+</tbody>
+</table>
+<p>目前已知的其他系统可能会存在相同的 Vim 问题：<br>
+<strong>OS X</strong> 10.12 (Sierra)<br>
+<strong>Arch Linux</strong></p>
+<p>在 <strong>WSL</strong> 上使用 Vim 后 (无论是否打开文件)，第一行会出现一行显示乱码，亦或称为<code>Broken first line rendering in VIM</code> (引用自 Github issues)</p>
+<pre><code class="language-bash">+q436f+q6b75+q6b64+q6b72+q6b6c+q2332+q2334+q2569+q2a37+q6b31
+                                VIM - Vi IMproved
+                                    
+                                version 8.0.1453
+                             by Bram Moolenaar et al. 
+                Modified by pkg-vim-maintainers@lists.alioth.debian.org
+                     Vim is open source and freely distributable
+                            
+                            Become a registered Vim user!
+                    type  :help register&lt;Enter&gt;   for information
+                    type  :q&lt;Enter&gt;               to exit
+                    type  :help&lt;Enter&gt;  or  &lt;F1&gt;  for on-line help
+                    type  :help version8&lt;Enter&gt;   for version info    
+</code></pre>
+<p>形如<code>+q436f+q6b75+q6b64+q6b72+q6b6c+q2332+q2334+q2569+q2a37+q6b31</code>这种乱码仅能通过<kbd>Ctrl + L</kbd>消除。</p>
+<hr>
+<h3 id="解决方案">解决方案</h3>
+<p>在 Terminal 内编辑 <code>.vimrc</code> 文件，并添加<code>set t_RV=</code>。</p>
+<pre><code class="language-bash"># wushuo @ DESKTOP-91UDQ1D in ~ [19:29:21] C:1
+$ vim ~/.vimrc
+</code></pre>
+<pre><code class="language-javascript">set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
+set fencs=utf-8,gbk
+
+### 设置下面这条的配置哦
+set t_RV=
+### 设置上面这条的配置哦
+
+call plug#begin('~/.vim/plugged')
+Plug 'dense-analysis/ale'
+call plug#end()         
+</code></pre>
+<p>再次打开 Vim，发现首行的渲染错误已经消失了。</p>
+<pre><code class="language-bash">
+                                VIM - Vi IMproved
+                                    
+                                version 8.0.1453
+                            by Bram Moolenaar et al. 
+                Modified by pkg-vim-maintainers@lists.alioth.debian.org
+                    Vim is open source and freely distributable
+                            
+                            Become a registered Vim user!
+                    type  :help register&lt;Enter&gt;   for information
+                    type  :q&lt;Enter&gt;               to exit
+                    type  :help&lt;Enter&gt;  or  &lt;F1&gt;  for on-line help
+                    type  :help version8&lt;Enter&gt;   for version info    
+</code></pre>
+<hr>
+<h3 id="引用资料">引用资料</h3>
+<p><strong>Hyper</strong> 项目下的 <strong>Github issues</strong> ：<br>
+<a href="https://github.com/vercel/hyper/issues/1037">Broken first line rendering in VIM (parseUntilStringTerminator_ aborts) #1037</a></p>
+<hr>
+<h3 id="一点点想说的话">一点点想说的话</h3>
+<p>一篇博客读起来的时间很短，特定内容的博客受众面少，写起来却异常花费时间。<br>
+驱使我写博客的目的是我能够静下心来思考，文字想要精炼，磨难也要经历。临近期末考试和四级考试，博客终于被捡起来写了一篇，维护了一下两个托管在 Github 上的静态站点，如果有时间，还能趁机打开一下 Gittalk 评论 (虽然我知道我的博客无人评论)。</p>
+<p>在北林的大二半年，过的很累，也并不充实，前几周看了 <a href="https://linghao.io">linghao</a> 的博客，发现自己消磨在不必要的事物上的时间太多了。来北京高铁上的写了一半的博客一直搁浅了，卸了知乎，闲来刷刷推特。看着手机的使用时间记录后，推特确实比知乎对时间和思维消耗比知乎少太多了。</p>
+<p>电子系明显比车辆系卷太多了，课程难且不说，精力的消耗难以避免，老师们似乎都沉浸在：“这门课这么难，我教的不错，很有深度，所以学生们收获许多”的幸福里。而我感到的只有 <strong>Push</strong> 。抛开一小部分做硬件的同学来说，学这么多门知识杂碎，耗费精力极高的高难度课程，是将试错成本拉低许多。一本 <strong>CSAPP</strong> 或是 一本 <strong>Algorithm</strong> 的时间就被浪费在”这门课好难，我要挂科了，得好好学习刷题“的时间里了。</p>
+<p>或许是我的时间没有被好好利用，又或许是电子系本身就要天天熬夜刷题才能通过，我对数电，模电和电分真的没什么感觉。相反，<strong>Rust</strong> 和 <strong>Apple GSX 认证</strong> 已经被我加入了提醒事项。我只想做个平凡人，或许平庸人也适合我。</p>
+<p>博客还得坚持写，英语也得坚持学，考试也得去考考。</p>
+<p>写于<br>
+模电考试前两天/四级考试前四天<br>
+北京林业大学 学12号楼</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大学物理公式]]></title>
         <id>https://whuosu.github.io/post/PhysicsReview/</id>
         <link href="https://whuosu.github.io/post/PhysicsReview/">
         </link>
@@ -414,17 +520,17 @@ $ git clone https://github.com/taichi-dev/taichi
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-311796"><label class="task-list-item-label" for="task-item-311796"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4420362"><label class="task-list-item-label" for="task-item-4420362"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-644925"><label class="task-list-item-label" for="task-item-644925"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2045275"><label class="task-list-item-label" for="task-item-2045275"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7266933"><label class="task-list-item-label" for="task-item-7266933"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1593318"><label class="task-list-item-label" for="task-item-1593318"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6179987"><label class="task-list-item-label" for="task-item-6179987"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3860286"><label class="task-list-item-label" for="task-item-3860286"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3189018"><label class="task-list-item-label" for="task-item-3189018"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4754820"><label class="task-list-item-label" for="task-item-4754820">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8723994"><label class="task-list-item-label" for="task-item-8723994">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3595973"><label class="task-list-item-label" for="task-item-3595973"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5419858"><label class="task-list-item-label" for="task-item-5419858"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8659518"><label class="task-list-item-label" for="task-item-8659518"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-85361"><label class="task-list-item-label" for="task-item-85361"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8410638"><label class="task-list-item-label" for="task-item-8410638"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5193612"><label class="task-list-item-label" for="task-item-5193612"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1716645"><label class="task-list-item-label" for="task-item-1716645"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7965869"><label class="task-list-item-label" for="task-item-7965869"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8696698"><label class="task-list-item-label" for="task-item-8696698"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8626169"><label class="task-list-item-label" for="task-item-8626169">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6320312"><label class="task-list-item-label" for="task-item-6320312">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
