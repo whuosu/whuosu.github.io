@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Vim 首行乱码问题解决方法 | Shuo</title>
-<link rel="shortcut icon" href="https://whuosu.github.io/favicon.ico?v=1607430635841">
+<link rel="shortcut icon" href="https://whuosu.github.io/favicon.ico?v=1607430939512">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://whuosu.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="Vim 首行乱码问题解决方法 | Shuo - Atom Feed" href="https://whuosu.github.io/atom.xml">
@@ -154,18 +154,18 @@
 <strong>Arch Linux</strong></p>
 <p>在 <strong>WSL</strong> 上使用 Vim 后 (无论是否打开文件)，第一行会出现一行显示乱码，亦或称为<code>Broken first line rendering in VIM</code> (引用自 Github issues)</p>
 <pre><code class="language-bash">+q436f+q6b75+q6b64+q6b72+q6b6c+q2332+q2334+q2569+q2a37+q6b31
-                                VIM - Vi IMproved
+                        VIM - Vi IMproved
                                     
-                                version 8.0.1453
-                             by Bram Moolenaar et al. 
-                Modified by pkg-vim-maintainers@lists.alioth.debian.org
-                     Vim is open source and freely distributable
+                        version 8.0.1453
+                        by Bram Moolenaar et al. 
+        Modified by pkg-vim-maintainers@lists.alioth.debian.org
+                Vim is open source and freely distributable
                             
-                            Become a registered Vim user!
-                    type  :help register&lt;Enter&gt;   for information
-                    type  :q&lt;Enter&gt;               to exit
-                    type  :help&lt;Enter&gt;  or  &lt;F1&gt;  for on-line help
-                    type  :help version8&lt;Enter&gt;   for version info    
+                    Become a registered Vim user!
+            type  :help register&lt;Enter&gt;   for information
+            type  :q&lt;Enter&gt;               to exit
+            type  :help&lt;Enter&gt;  or  &lt;F1&gt;  for on-line help
+            type  :help version8&lt;Enter&gt;   for version info    
 </code></pre>
 <p>形如<code>+q436f+q6b75+q6b64+q6b72+q6b6c+q2332+q2334+q2569+q2a37+q6b31</code>这种乱码仅能通过<kbd>Ctrl + L</kbd>消除。</p>
 <hr>
@@ -189,18 +189,18 @@ call plug#end()
 </code></pre>
 <p>再次打开 Vim，发现首行的渲染错误已经消失了。</p>
 <pre><code class="language-bash">
-                                VIM - Vi IMproved
+                        VIM - Vi IMproved
                                     
-                                version 8.0.1453
-                            by Bram Moolenaar et al. 
-                Modified by pkg-vim-maintainers@lists.alioth.debian.org
-                    Vim is open source and freely distributable
+                        version 8.0.1453
+                        by Bram Moolenaar et al. 
+        Modified by pkg-vim-maintainers@lists.alioth.debian.org
+                Vim is open source and freely distributable
                             
-                            Become a registered Vim user!
-                    type  :help register&lt;Enter&gt;   for information
-                    type  :q&lt;Enter&gt;               to exit
-                    type  :help&lt;Enter&gt;  or  &lt;F1&gt;  for on-line help
-                    type  :help version8&lt;Enter&gt;   for version info    
+                    Become a registered Vim user!
+            type  :help register&lt;Enter&gt;   for information
+            type  :q&lt;Enter&gt;               to exit
+            type  :help&lt;Enter&gt;  or  &lt;F1&gt;  for on-line help
+            type  :help version8&lt;Enter&gt;   for version info     
 </code></pre>
 <hr>
 <h3 id="引用资料">引用资料</h3>
