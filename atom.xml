@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-01-06T01:39:07.006Z</updated>
+    <updated>2021-01-06T02:06:06.186Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -50,7 +50,7 @@
 <strong>OS X</strong> 10.12 (Sierra)<br>
 <strong>Arch Linux</strong></p>
 <p>在 <strong>WSL</strong> 上使用 Vim 后 (无论是否打开文件)，第一行会出现一行显示乱码，亦或称为<code>Broken first line rendering in VIM</code> (引用自 Github issues)<br>
-<img src="https://i.loli.net/2021/01/06/4JHP3Q7dV5WeNCb.png" alt="carbon _3_.png" loading="lazy"><br>
+<img src="https://wushuo.ink/post-images/1609898577114.webp" alt="VimWithRenderIssues" loading="lazy"><br>
 形如<code>+q436f+q6b75+q6b64</code>这种乱码仅能通过<kbd>Ctrl + L</kbd>消除。</p>
 <hr>
 <h3 id="解决方案">解决方案</h3>
@@ -314,17 +314,17 @@ $ git clone https://github.com/taichi-dev/taichi
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9886454"><label class="task-list-item-label" for="task-item-9886454"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5530814"><label class="task-list-item-label" for="task-item-5530814"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7852528"><label class="task-list-item-label" for="task-item-7852528"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1917983"><label class="task-list-item-label" for="task-item-1917983"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9034117"><label class="task-list-item-label" for="task-item-9034117"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7491013"><label class="task-list-item-label" for="task-item-7491013"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-632357"><label class="task-list-item-label" for="task-item-632357"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6291075"><label class="task-list-item-label" for="task-item-6291075"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3606841"><label class="task-list-item-label" for="task-item-3606841"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8809462"><label class="task-list-item-label" for="task-item-8809462">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9651997"><label class="task-list-item-label" for="task-item-9651997">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9800994"><label class="task-list-item-label" for="task-item-9800994"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6590833"><label class="task-list-item-label" for="task-item-6590833"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-680451"><label class="task-list-item-label" for="task-item-680451"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1080766"><label class="task-list-item-label" for="task-item-1080766"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7606489"><label class="task-list-item-label" for="task-item-7606489"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-94179"><label class="task-list-item-label" for="task-item-94179"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1102275"><label class="task-list-item-label" for="task-item-1102275"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7860243"><label class="task-list-item-label" for="task-item-7860243"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7002801"><label class="task-list-item-label" for="task-item-7002801"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8850764"><label class="task-list-item-label" for="task-item-8850764">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1962745"><label class="task-list-item-label" for="task-item-1962745">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
