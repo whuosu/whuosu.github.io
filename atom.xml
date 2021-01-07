@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-01-07T12:05:30.691Z</updated>
+    <updated>2021-01-07T14:24:38.195Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://wushuo.ink/images/avatar.png</logo>
     <icon>https://wushuo.ink/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[从 OPPO 和 “ColorOS” 谈起]]></title>
+        <id>https://wushuo.ink/post/fromOPPOtoLife/</id>
+        <link href="https://wushuo.ink/post/fromOPPOtoLife/">
+        </link>
+        <updated>2021-01-07T12:52:59.000Z</updated>
+        <summary type="html"><![CDATA[<p>OPPO 作为国民级别的品牌，凭借强大的营销手段和“独特”的设计语言耳熟能详；而 “ColorOS”  作为 OPPO 自主研发的 Android UI，却不配 OS 其名。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>OPPO 作为国民级别的品牌，凭借强大的营销手段和“独特”的设计语言耳熟能详；而 “ColorOS”  作为 OPPO 自主研发的 Android UI，却不配 OS 其名。</p>
+<!-- more -->
+<hr>
+<p>前些天把我妈用了两年的 OPPO 手机换成了 iPhone XR，虽然我妈坚持说手机很好还能用，她很喜欢，我还是替她做主换掉了。知道我妈心疼钱，于是求好哥们费尽心思淘了个黑解的 iPhone XR，不带面容识别，让我妈随便用。知道了价钱，我妈用地省心，也不担心摔了心疼。</p>
+<p>于是剩下的 OPPO A5 手机我就拿来当个电子时钟。当然，作为电子时钟都是后话了，我也曾经对这个刘海屏的手机抱有一点点希望的：3GB RAM，骁龙SMD450，还有和同期发布的 iPhone X 相似的刘海屏幕。但可惜，找遍了全网也没有找到了可以找到刷原生系统的方法。原因当然是 <a href="https://zh.wikipedia.org/wiki/%E5%95%9F%E5%8B%95%E7%A8%8B%E5%BC%8F">BootLoader</a> 被锁住，不仅如此，甚至桌面也被锁住，无法更换第三方桌面。</p>
+<p>印象中 OPPO 手机常常出现于电视广告中，从“充电五分钟，电话两小时”到各色明星大腕的代言。我人生的第一部自己的手机就是 OPPO ，不过几载，曾经 OPPO 骄傲的拍照，充电续航也只剩下美艳，大电池。锁起了桌面，凭借着从前强大的线下商店铺展和广告流量，OPPO 的状况也还过的去。</p>
+<p>但在二〇二〇这个不那么幸运的年份，OPPO 的最后一点差距被彻底拉开，说是 ColorOS 不如称是 ColorUI：华为EMUI开始靠向成熟的iOS，以软件公司著称的小米MIUI，友商vivo全新的wget交互方式。OPPO 却还在完善着自己“操作系统”的广告推送机制。</p>
+<p>即使拖出 OPPO 高端 OnePlus 系列，“不将就”的系统设计对国内的环境也“不将就“。操作系统的不人性化使得 OPPO 的高端线用户开始流失，低端手机搭配完全与价格不符的配置也让低端线用户发誓再也不买这个品牌。</p>
+<p>核心技术的缺失是 OPPO 一直的痛，与此同样遭遇的还有隔壁的 vivo，但既然做不出好的系统，就应该和小米一样打开 BL 锁的权限，让用户能够真正拿到使用硬件的权力，而不是用糟糕的系统使用体验恶心用户。</p>
+<p>我向来不喜欢对一个品牌标榜好或者坏，但 OPPO 在 “ColorOS” 方面的表现这是难尽人意。</p>
+<p>失去核心技术一定会在未来被暴露和无限放大。就像念大学，失去了特别的东西：“每天上课听讲，每次考试复习，每周参加社团活动，和无数大学生一样念完大学四年，任时光荏苒”，何不可以怜惜。念到最后如 OPPO 宣传自己道：“我们这款手机搭载的是八核处理器。”资本家和教授可都是“电子发烧友”：一上手立马发现 SDM450 八核不过是嘘头，没有一点真才实料，根本不是我们要买的手机，或许你最看不上的过时 iPhone5S 比你的方方面面都要强。</p>
+<p>或许会想，为什么要拿 iPhone 和 OPPO 相比较，iPhone 的体量不知道比 OPPO 高到哪里去了。但事实是，iPhone 和 OPPO 正处在同一市场，为什么觉得那些高不可攀的产品和你的目标群体不会有冲突，我们也一样，市场抢夺并非理论。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Vim 首行乱码问题解决方法]]></title>
         <id>https://wushuo.ink/post/VimRenderIssue/</id>
@@ -313,17 +335,17 @@ $ git clone https://github.com/taichi-dev/taichi
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2470053"><label class="task-list-item-label" for="task-item-2470053"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3219619"><label class="task-list-item-label" for="task-item-3219619"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5785068"><label class="task-list-item-label" for="task-item-5785068"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5112194"><label class="task-list-item-label" for="task-item-5112194"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8197999"><label class="task-list-item-label" for="task-item-8197999"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6570507"><label class="task-list-item-label" for="task-item-6570507"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7301698"><label class="task-list-item-label" for="task-item-7301698"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6463403"><label class="task-list-item-label" for="task-item-6463403"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4306724"><label class="task-list-item-label" for="task-item-4306724"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8278665"><label class="task-list-item-label" for="task-item-8278665">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4893966"><label class="task-list-item-label" for="task-item-4893966">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7688234"><label class="task-list-item-label" for="task-item-7688234"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-504467"><label class="task-list-item-label" for="task-item-504467"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9082036"><label class="task-list-item-label" for="task-item-9082036"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2108813"><label class="task-list-item-label" for="task-item-2108813"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8884606"><label class="task-list-item-label" for="task-item-8884606"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-288454"><label class="task-list-item-label" for="task-item-288454"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5043669"><label class="task-list-item-label" for="task-item-5043669"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5613318"><label class="task-list-item-label" for="task-item-5613318"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1239261"><label class="task-list-item-label" for="task-item-1239261"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9224656"><label class="task-list-item-label" for="task-item-9224656">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2172126"><label class="task-list-item-label" for="task-item-2172126">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
