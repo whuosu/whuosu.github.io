@@ -6,7 +6,7 @@
 
 <title>Vim 首行乱码问题解决方法 | Shuo</title>
 
-<link rel="shortcut icon" href="https://wushuo.ink/favicon.ico?v=1609988691129">
+<link rel="shortcut icon" href="https://wushuo.ink/favicon.ico?v=1609991282661">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://wushuo.ink/styles/main.css">
@@ -77,7 +77,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1609988691129" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1609991282661" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -142,7 +142,7 @@
 <strong>OS X</strong> 10.12 (Sierra)<br>
 <strong>Arch Linux</strong></p>
 <p>在 <strong>WSL</strong> 上使用 Vim 后 (无论是否打开文件)，第一行会出现一行显示乱码，亦或称为<code>Broken first line rendering in VIM</code> (引用自 Github issues)<br>
-<img src="https://wushuo.ink/post-images/1609988411163.webp" alt="vim with render issues" loading="lazy"><br>
+<img src="https://wushuo.ink/post-images/1609991249302.webp" alt="vim with render issues" loading="lazy"><br>
 形如<code>+q436f+q6b75+q6b64</code>这种乱码仅能通过<kbd>Ctrl + L</kbd>消除。</p>
 <hr>
 <h3 id="解决方案">解决方案</h3>
@@ -164,7 +164,6 @@ Plug 'dense-analysis/ale'
 call plug#end()         
 </code></pre>
 <p>再次打开 Vim，发现首行的渲染错误已经消失了。</p>
-<figure data-type="image" tabindex="1"><img src="https://wushuo.ink/post-images/1609988630914.webp" alt="vim" loading="lazy"></figure>
 <hr>
 <h3 id="引用资料">引用资料</h3>
 <p><strong>Hyper</strong> 项目下的 <strong>Github issues</strong> ：<br>

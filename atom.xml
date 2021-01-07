@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-01-07T03:06:55.088Z</updated>
+    <updated>2021-01-07T03:48:43.969Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -50,7 +50,7 @@
 <strong>OS X</strong> 10.12 (Sierra)<br>
 <strong>Arch Linux</strong></p>
 <p>在 <strong>WSL</strong> 上使用 Vim 后 (无论是否打开文件)，第一行会出现一行显示乱码，亦或称为<code>Broken first line rendering in VIM</code> (引用自 Github issues)<br>
-<img src="https://wushuo.ink/post-images/1609988411163.webp" alt="vim with render issues" loading="lazy"><br>
+<img src="https://wushuo.ink/post-images/1609991249302.webp" alt="vim with render issues" loading="lazy"><br>
 形如<code>+q436f+q6b75+q6b64</code>这种乱码仅能通过<kbd>Ctrl + L</kbd>消除。</p>
 <hr>
 <h3 id="解决方案">解决方案</h3>
@@ -72,7 +72,6 @@ Plug 'dense-analysis/ale'
 call plug#end()         
 </code></pre>
 <p>再次打开 Vim，发现首行的渲染错误已经消失了。</p>
-<figure data-type="image" tabindex="1"><img src="https://wushuo.ink/post-images/1609988630914.webp" alt="vim" loading="lazy"></figure>
 <hr>
 <h3 id="引用资料">引用资料</h3>
 <p><strong>Hyper</strong> 项目下的 <strong>Github issues</strong> ：<br>
@@ -262,8 +261,7 @@ $ git clone https://github.com/taichi-dev/taichi
         <content type="html"><![CDATA[<p>A Hackintosh is a computer that runs an Apple Macintosh operating system on computer hardware not authorized for the purpose by Apple. This passage is to introduce using intel G41 series motherboard hackintosh on a low budget.</p>
 <!-- more -->
 <h3 id="showing"># <strong>Showing</strong></h3>
-<p><img src="https://wushuo.ink/post-images/1609988673599.webp" alt="Glance" loading="lazy"><br>
-<img src="https://i.loli.net/2020/08/23/VgmZOt2DnlYubzi.png" alt="glance.png" loading="lazy"></p>
+<figure data-type="image" tabindex="1"><img src="https://wushuo.ink/post-images/1609988673599.webp" alt="Glance" loading="lazy"></figure>
 <h3 id="system-configuration"># <strong>System Configuration</strong></h3>
 <table>
 <thead>
@@ -315,17 +313,17 @@ $ git clone https://github.com/taichi-dev/taichi
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-437797"><label class="task-list-item-label" for="task-item-437797"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2306190"><label class="task-list-item-label" for="task-item-2306190"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4632273"><label class="task-list-item-label" for="task-item-4632273"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2712482"><label class="task-list-item-label" for="task-item-2712482"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8758558"><label class="task-list-item-label" for="task-item-8758558"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4481753"><label class="task-list-item-label" for="task-item-4481753"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5442150"><label class="task-list-item-label" for="task-item-5442150"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6422533"><label class="task-list-item-label" for="task-item-6422533"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7095577"><label class="task-list-item-label" for="task-item-7095577"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4497193"><label class="task-list-item-label" for="task-item-4497193">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8080375"><label class="task-list-item-label" for="task-item-8080375">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2200268"><label class="task-list-item-label" for="task-item-2200268"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-866963"><label class="task-list-item-label" for="task-item-866963"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5186641"><label class="task-list-item-label" for="task-item-5186641"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4080671"><label class="task-list-item-label" for="task-item-4080671"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7006545"><label class="task-list-item-label" for="task-item-7006545"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4329725"><label class="task-list-item-label" for="task-item-4329725"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5615164"><label class="task-list-item-label" for="task-item-5615164"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-440531"><label class="task-list-item-label" for="task-item-440531"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6866533"><label class="task-list-item-label" for="task-item-6866533"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6581480"><label class="task-list-item-label" for="task-item-6581480">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8919515"><label class="task-list-item-label" for="task-item-8919515">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
