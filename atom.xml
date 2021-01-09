@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-01-07T15:10:20.979Z</updated>
+    <updated>2021-01-09T05:13:38.995Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://wushuo.ink/images/avatar.png</logo>
     <icon>https://wushuo.ink/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[断舍离]]></title>
+        <id>https://wushuo.ink/post/duan-she-chi/</id>
+        <link href="https://wushuo.ink/post/duan-she-chi/">
+        </link>
+        <updated>2021-01-09T03:02:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>明明无伤大雅，我为什么想法设法去除一切广告并且注销知乎和微博 / 无纸化阅读的专注</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>明明无伤大雅，我为什么想法设法去除一切广告并且注销知乎和微博 / 无纸化阅读的专注</p>
+<!-- more -->
+<p>刷了四五年的知乎，连带着微博一起账号注销了。看不到学校负面新闻，也便觉得学校晚上更明亮了。</p>
+<p>打垮我对社交网络的热情的，不只有无加节制的广告，看了 <a href="https://linghao.io/posts/my-time-management-system-2020">Linghao Zhang 的博客</a>，拒绝 <a href="https://en.wikipedia.org/wiki/Fear_of_missing_out">FOMO</a> 让我很是在意，当然卸载知乎和微博只是其中一小环。</p>
+<p>我发现我很难和念中学时候那样专注于看一本书或者学习一类事物的规律。急功近利地掌握方法和运用并动手开始实践：典型的工程思维应该有的方法论段。对方法的求证态度也是一概拿来主义，无需质疑，唯结果而论。至于过程，任他如何糟糕都是封装在看不到的地方。</p>
+<p>当人们议论浮躁在社会中漫延的时候，我发现我早早地在大学就融入到了社会中去了。白天假装努力自我感动，晚上被 APP <strong>信息过载</strong>。</p>
+<p>知乎作为我常刷的软件，不错的算法推荐和用户画像识别，让它总能为我的课余甚至是课上时间增添许多欢乐。若是只用知乎的搜索功能，其实能将有效信息聚集起来，大有益处。但知乎加入了<strong>热搜</strong>，这份榜单总能够分散注意力，很少有人能够为了热搜打开一款 APP，但绝大多数人都会在完成一两分钟基本目的后刷上半小时的热搜。</p>
+<p>从“知乎治校”到“清华学姐”，再到各种“压抑的大学/公司事件”，知乎的热搜并没有给我带来好处。反而有大量的信息铺面而来。</p>
+<p>再谈广告：作为互联网企业从用户口袋里隔空捞钱的手段，知乎的广告投放确实比其他小厂有水准。几乎每个回答下都有广告，这些广告并不是让你点入，而是在看完回答时切换下一个回答过程中，一秒钟手指移动的时间就能进行<strong>潜在的广告投放</strong>。你也许并不感兴趣，也未曾了解到自己被投放了这样的广告，但在广告投放方的眼里，你已经被广告内容<strong>潜移默化</strong>地影响了。除了这样的通过知乎直接投放广告，答主也能通过在文章内自行推荐广告链接的方式推送<strong>软广</strong>，通过广告代理人答主的形象进行广告投放，知乎当然也能分得一羹。</p>
+<p>至于微博，已经很久都不在看了。很难有机会让我点开第三方无广告的微博，通过数个捷径前往热搜去看哪些事件正在被大家“刷上去”。</p>
+<p>电子设备正在逐步取代纸质化阅读甚至是书写，我已经很难向从前那样抱着一本书在空调房间里看数小时之久。但愿新的一年里能够认认真真的看书——不管是纸质书或者iPad或者是Kindle，毕竟载体时时在变化，所承载的内容才是恒久不衰的。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[从 OPPO 和 “ColorOS” 谈起]]></title>
         <id>https://wushuo.ink/post/fromOPPOtoLife/</id>
@@ -29,7 +50,7 @@
 <p>核心技术的缺失是 OPPO 一直的痛，与此同样遭遇的还有隔壁的 vivo，但既然做不出好的系统，就应该和小米一样打开 BL 锁的权限，让用户能够真正拿到使用硬件的权力，而不是用糟糕的系统使用体验恶心用户。</p>
 <p>我向来不喜欢对一个品牌标榜好或者坏，但 OPPO 在 “ColorOS” 方面的表现这是难尽人意。</p>
 <p>失去核心技术一定会在未来被暴露和无限放大。就像念大学，失去了特别的东西：“每天上课听讲，每次考试复习，每周参加社团活动，和无数大学生一样念完大学四年，任时光荏苒”，何不可以怜惜。念到最后如 OPPO 宣传自己道：“我们这款手机搭载的是八核处理器。”资本家和教授可都是“电子发烧友”：一上手立马发现 SDM450 八核不过是嘘头，没有一点真才实料，根本不是我们要买的手机，或许你最看不上的过时 iPhone5S 比你的方方面面都要强。</p>
-<p>或许会想，为什么要拿 iPhone 和 OPPO 相比较，iPhone 的体量不知道比 OPPO 高到哪里去了。但事实是，iPhone 和 OPPO 正处在同一市场，为什么觉得那些高不可攀的产品和你的目标群体不会有冲突，我们也一样，市场抢夺并非理论。</p>
+<p>或许会想，为什么要拿 iPhone 和 OPPO 相比较，iPhone 的体量不知道比 OPPO 高到哪里去了。但事实是，iPhone 和 OPPO 正处在同一市场，为什么觉得那些高不可攀的产品和你的目标群体不会有冲突，我这样的打工人也一样如此。</p>
 ]]></content>
     </entry>
     <entry>
@@ -335,17 +356,17 @@ $ git clone https://github.com/taichi-dev/taichi
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8872885"><label class="task-list-item-label" for="task-item-8872885"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-798682"><label class="task-list-item-label" for="task-item-798682"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5934480"><label class="task-list-item-label" for="task-item-5934480"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2088099"><label class="task-list-item-label" for="task-item-2088099"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5851061"><label class="task-list-item-label" for="task-item-5851061"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-712736"><label class="task-list-item-label" for="task-item-712736"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6248552"><label class="task-list-item-label" for="task-item-6248552"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9828794"><label class="task-list-item-label" for="task-item-9828794"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5503889"><label class="task-list-item-label" for="task-item-5503889"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-730389"><label class="task-list-item-label" for="task-item-730389">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-50485"><label class="task-list-item-label" for="task-item-50485">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1835333"><label class="task-list-item-label" for="task-item-1835333"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2761894"><label class="task-list-item-label" for="task-item-2761894"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4525370"><label class="task-list-item-label" for="task-item-4525370"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5579855"><label class="task-list-item-label" for="task-item-5579855"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-809725"><label class="task-list-item-label" for="task-item-809725"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2717610"><label class="task-list-item-label" for="task-item-2717610"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8318755"><label class="task-list-item-label" for="task-item-8318755"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4753054"><label class="task-list-item-label" for="task-item-4753054"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-550885"><label class="task-list-item-label" for="task-item-550885"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2410908"><label class="task-list-item-label" for="task-item-2410908">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8695504"><label class="task-list-item-label" for="task-item-8695504">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
