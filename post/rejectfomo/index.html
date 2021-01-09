@@ -4,7 +4,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>Vim 首行乱码问题解决方法 | Shuo</title>
+<title>断舍离 | Shuo</title>
 
 <link rel="shortcut icon" href="https://wushuo.ink/favicon.ico?v=1610174066619">
 
@@ -89,96 +89,34 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    Vim 首行乱码问题解决方法
+                    断舍离
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2020-12-08 ·
+                        · 2021-01-09 ·
                     </time>
                     
-                        <a href="https://wushuo.ink/tag/skGgZPdPe/" class="post-tags">
-                            # Vim
+                        <a href="https://wushuo.ink/tag/wkS4Y-XQX/" class="post-tags">
+                            # 随笔
                         </a>
                     
-                        <a href="https://wushuo.ink/tag/RwybRooRH/" class="post-tags">
-                            # Linux
-                        </a>
-                    
-                        <a href="https://wushuo.ink/tag/Jt3X4OUk5/" class="post-tags">
-                            # 技术
+                        <a href="https://wushuo.ink/tag/ewbje6RVj/" class="post-tags">
+                            # 生活
                         </a>
                     
                 </div>
                 <div class="post-content">
-                    <p>在使用 Vim 时遇到了首行乱码形如<code>+q436f+q6b75+q6b64</code>，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 <code>.vimrc</code> 文件中添加 <code>set t_RV=</code> 确保 Vim 能够显示正确的内容。</p>
+                    <p>明明无伤大雅，我为什么想法设法去除一切广告并且注销知乎和微博 / 无纸化阅读的专注</p>
 <!-- more -->
-<ul>
-<li><a href="#%E9%97%AE%E9%A2%98%E5%A4%8D%E7%8E%B0">问题复现</a></li>
-<li><a href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">解决方案</a></li>
-<li><a href="#%E5%BC%95%E7%94%A8%E8%B5%84%E6%96%99">引用资料</a></li>
-<li><a href="#%E4%B8%80%E7%82%B9%E7%82%B9%E6%83%B3%E8%AF%B4%E7%9A%84%E8%AF%9D">想说些话</a></li>
-</ul>
-<hr>
-<h3 id="问题复现">问题复现</h3>
-<p>在我的 <strong>Linux</strong> 虚拟机 (<strong>WSL</strong>) 上运行 Vim 时总会在第一行出现一行乱码，在多次重装 Vim 无果后，终于在 Github 的 <a href="https://github.com/vercel/hyper"><strong>Hyper</strong></a> 项目上找到<a href="https://github.com/vercel/hyper/issues/1037"><strong>答案</strong></a>。</p>
-<p># 我的配置</p>
-<table>
-<thead>
-<tr>
-<th>系统</th>
-<th>Vim</th>
-<th>Shell</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ubuntu 18.04 LTS</td>
-<td>Vim 8.0</td>
-<td>zsh with oh-my-zsh</td>
-</tr>
-</tbody>
-</table>
-<p>目前已知的其他系统可能会存在相同的 Vim 问题：<br>
-<strong>OS X</strong> 10.12 (Sierra)<br>
-<strong>Arch Linux</strong></p>
-<p>在 <strong>WSL</strong> 上使用 Vim 后 (无论是否打开文件)，第一行会出现一行显示乱码，亦或称为<code>Broken first line rendering in VIM</code> (引用自 Github issues)<br>
-<img src="https://wushuo.ink/post-images/1609991249302.webp" alt="vim with render issues" loading="lazy"><br>
-形如<code>+q436f+q6b75+q6b64</code>这种乱码仅能通过<kbd>Ctrl + L</kbd>消除。</p>
-<hr>
-<h3 id="解决方案">解决方案</h3>
-<p>在 Terminal 内编辑 <code>.vimrc</code> 文件，并添加<code>set t_RV=</code>。</p>
-<pre><code class="language-bash"># wushuo @ DESKTOP-91UDQ1D in ~ [19:29:21] C:1
-$ vim ~/.vimrc
-</code></pre>
-<pre><code class="language-javascript">set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
-set termencoding=utf-8
-set encoding=utf-8
-set fencs=utf-8,gbk
-
-### 设置下面这条的配置哦
-set t_RV=
-### 设置上面这条的配置哦
-
-call plug#begin('~/.vim/plugged')
-Plug 'dense-analysis/ale'
-call plug#end()         
-</code></pre>
-<p>再次打开 Vim，发现首行的渲染错误已经消失了。</p>
-<hr>
-<h3 id="引用资料">引用资料</h3>
-<p><strong>Hyper</strong> 项目下的 <strong>Github issues</strong> ：<br>
-<a href="https://github.com/vercel/hyper/issues/1037">Broken first line rendering in VIM (parseUntilStringTerminator_ aborts) #1037</a></p>
-<hr>
-<h3 id="一点点想说的话">一点点想说的话</h3>
-<p>一篇博客读起来的时间很短，特定内容的博客受众面少，写起来却异常花费时间。<br>
-驱使我写博客的目的是我能够静下心来思考，文字想要精炼，磨难也要经历。临近期末考试和四级考试，博客终于被捡起来写了一篇，维护了一下两个托管在 Github 上的静态站点，如果有时间，还能趁机打开一下 Gittalk 评论 (虽然我知道我的博客无人评论)。</p>
-<p>在北林的大二半年，过的很累，也并不充实，前几周看了 <a href="https://linghao.io">linghao</a> 的博客，发现自己消磨在不必要的事物上的时间太多了。来北京高铁上的写了一半的博客一直搁浅了，卸了知乎，闲来刷刷推特。看着手机的使用时间记录后，推特确实比知乎对时间和思维消耗比知乎少太多了。</p>
-<p>电子系明显比车辆系卷太多了，课程难且不说，精力的消耗难以避免，老师们似乎都沉浸在：“这门课这么难，我教的不错，很有深度，所以学生们收获许多”的幸福里。而我感到的只有 <strong>Push</strong> 。抛开一小部分做硬件的同学来说，学这么多门知识杂碎，耗费精力极高的高难度课程，是将试错成本拉低许多。一本 <strong>CSAPP</strong> 或是 一本 <strong>Algorithm</strong> 的时间就被浪费在”这门课好难，我要挂科了，得好好学习刷题“的时间里了。</p>
-<p>或许是我的时间没有被好好利用，又或许是电子系本身就要天天熬夜刷题才能通过，我对数电，模电和电分真的没什么感觉。相反，<strong>Rust</strong> 和 <strong>Apple GSX 认证</strong> 已经被我加入了提醒事项。我只想做个平凡人，或许平庸人也适合我。</p>
-<p>博客还得坚持写，英语也得坚持学，考试也得去考考。</p>
-<p>写于<br>
-模电考试前两天/四级考试前四天<br>
-北京林业大学 学12号楼</p>
+<p>刷了四五年的知乎，连带着微博一起账号注销了。看不到学校负面新闻，也便觉得学校晚上更明亮了。</p>
+<p>打垮我对社交网络的热情的，不只有无加节制的广告，看了 <a href="https://linghao.io/posts/my-time-management-system-2020">Linghao Zhang 的博客</a>，拒绝 <a href="https://en.wikipedia.org/wiki/Fear_of_missing_out">FOMO</a> 让我很是在意，当然卸载知乎和微博只是其中一小环。</p>
+<p>我发现我很难像念中学时候那样专注于看一本书或者学习一类事物的规律。急功近利地掌握方法和运用并动手开始实践：典型的工程思维应该有的方法论段。对方法的求证态度也是一概拿来主义，无需质疑，唯结果而论。至于过程，任他如何糟糕都是封装在看不到的地方。</p>
+<p>当人们议论浮躁在社会中漫延的时候，我发现我早早地在大学就融入到了社会中去了。白天假装努力自我感动，晚上被 APP <strong>信息过载</strong>。</p>
+<p>知乎作为我常刷的软件，不错的算法推荐和用户画像识别，让它总能为我的课余甚至是课上时间增添许多欢乐。若是只用知乎的搜索功能，其实能将有效信息聚集起来，大有益处。但知乎加入了<strong>热搜</strong>，这份榜单总能够分散注意力，很少有人能够为了热搜打开一款 APP，但绝大多数人都会在完成一两分钟基本目的后刷上半小时的热搜。</p>
+<p>从“知乎治校”到“清华学姐”，再到各种“压抑的大学/公司事件”，知乎的热搜并没有给我带来好处。反而有大量的信息铺面而来。</p>
+<p>再谈广告：作为互联网企业从用户口袋里隔空捞钱的手段，知乎的广告投放确实比其他小厂有水准。几乎每个回答下都有广告，这些广告并不是让你点入，而是在看完回答时切换下一个回答过程中，一秒钟手指移动的时间就能进行<strong>潜在的广告投放</strong>。你也许并不感兴趣，也未曾了解到自己被投放了这样的广告，但在广告投放方的眼里，你已经被广告内容<strong>潜移默化</strong>地影响了。除了这样通过知乎直接投放广告的方式，答主也能通过在文章内自行推荐广告链接的方式推送<strong>软广</strong>：通过广告代理人答主的形象进行广告投放，知乎当然也能分得一羹。</p>
+<p>至于微博，已经很久都不在看了。很难有机会让我点开第三方无广告的微博，通过数个捷径前往热搜去看哪些事件正在被大家“刷上去”。</p>
+<p>电子设备正在逐步取代纸质化阅读甚至是书写，我已经很难向从前那样抱着一本书在空调房间里看数小时之久。但愿新的一年里能够认认真真的看书——不管是纸质书或者iPad或者是Kindle，毕竟载体时时在变化，所承载的内容才是恒久不衰的。</p>
 
                 </div>
             </article>
@@ -188,8 +126,8 @@ call plug#end()
         
             <div class="next-post">
                 <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="https://wushuo.ink/post/fluentterminalwsl/" class="post-title gt-a-link">
-                    基于 Fluent Terminal 和 WSL 的 Windows 命令行工具
+                <a href="https://wushuo.ink/post/fromOPPOtoLife/" class="post-title gt-a-link">
+                    从 OPPO 和 “ColorOS” 谈起
                 </a>
             </div>
         
