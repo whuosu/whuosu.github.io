@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-01-13T06:22:48.378Z</updated>
+    <updated>2021-01-14T09:44:46.097Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -10,6 +10,26 @@
     <logo>https://wushuo.ink/images/avatar.png</logo>
     <icon>https://wushuo.ink/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[再见了，DW1820A]]></title>
+        <id>https://wushuo.ink/post/hackintoshFromPerfectToGiveup/</id>
+        <link href="https://wushuo.ink/post/hackintoshFromPerfectToGiveup/">
+        </link>
+        <updated>2021-01-14T02:36:34.000Z</updated>
+        <summary type="html"><![CDATA[<p>从 DW1820A 到手已经半个月了，从 Airdrop 到 Airplay，再到 Command 和 Option，一圈下来还是 Windows 10 更加适合我。别了，Hackintosh。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>从 DW1820A 到手已经半个月了，从 Airdrop 到 Airplay，再到 Command 和 Option，一圈下来还是 Windows 10 更加适合我。别了，Hackintosh。</p>
+<!-- more -->
+<p>博通 DW1820A 是戴尔为 XPS13 9350 定制的一款网卡，因为能够在 macOS 下被驱动，并且能够正常使用隔空投送，接力这些 Apple 原生服务被熟知。在黑苹果圈子里被炒到了接近 200 软妹币，要知道支持 Wi-Fi 6 和 蓝牙 5.1 的 intel AX200 才 70 元。</p>
+<p>DW1820A 在 macOS 下的体验确实<strong>几乎</strong>完美，但 hacintosh 的稳定性让我抓狂。Opencore 的引导几乎总是出现问题，失去了 T2 芯片作为安全启动引导，hackintosh 在<strong>引导阶段</strong>无法加载驱动和屏幕闪烁。</p>
+<p>至于 macOS 下的快捷键，对于熟悉了多年 Windows 操作方式的我来说，已经很难把手指移到 Command 键的位置执行操作了。加之 macOS 对第三方鼠标没有平滑滚动，无法对触控板和鼠标进行单独操控，除了使用<strong>非系统级</strong>软件，很难解决鼠标在 macOS 下的体验。</p>
+<p>系统本身的稳定性层面，蓝牙与 5Ghz 频段冲突造成系统级卡顿，颠覆了我对 macOS 无比流畅的想象。不同接口造成 macOS 在某些软件下还没有 Windows 渲染流畅。</p>
+<p>原本让我觉得 macOS 就是开发设备的一个重要原因就是 <strong>shell</strong>，类 Unix 系统自带 shell 让 ssh / git 不再是困难。但 Windows 10 的 Fluent Terminal 搭配 Linux 子系统平步青云地做到了这些，这让我失去了对 macOS 最后一点点的幻想。</p>
+<p><strong>稳定性</strong>，最终让我选择了 Windows 10 202H，流畅的动画和支持<strong>硬件加速 GPU</strong>。</p>
+<p>格式化了 D 盘，换掉了 键盘上的 Command 键，再见了 DW1820A，再见了 macOS，再见了hackintosh。</p>
+<p>下次再见才是<strong>一派新风貌</strong>。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[我的家庭组网：软路由从联网到智能家居]]></title>
         <id>https://wushuo.ink/post/aboutOpenwrt/</id>
@@ -466,17 +486,17 @@ $ git clone https://github.com/taichi-dev/taichi
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7467378"><label class="task-list-item-label" for="task-item-7467378"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5110830"><label class="task-list-item-label" for="task-item-5110830"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8455751"><label class="task-list-item-label" for="task-item-8455751"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1648287"><label class="task-list-item-label" for="task-item-1648287"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4733382"><label class="task-list-item-label" for="task-item-4733382"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8753414"><label class="task-list-item-label" for="task-item-8753414"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-955993"><label class="task-list-item-label" for="task-item-955993"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7078137"><label class="task-list-item-label" for="task-item-7078137"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7893531"><label class="task-list-item-label" for="task-item-7893531"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3380636"><label class="task-list-item-label" for="task-item-3380636">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4270212"><label class="task-list-item-label" for="task-item-4270212">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4942477"><label class="task-list-item-label" for="task-item-4942477"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7088518"><label class="task-list-item-label" for="task-item-7088518"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4650265"><label class="task-list-item-label" for="task-item-4650265"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3099146"><label class="task-list-item-label" for="task-item-3099146"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7123363"><label class="task-list-item-label" for="task-item-7123363"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2415218"><label class="task-list-item-label" for="task-item-2415218"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4951064"><label class="task-list-item-label" for="task-item-4951064"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4264352"><label class="task-list-item-label" for="task-item-4264352"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7900647"><label class="task-list-item-label" for="task-item-7900647"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1869408"><label class="task-list-item-label" for="task-item-1869408">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2991578"><label class="task-list-item-label" for="task-item-2991578">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
@@ -629,43 +649,6 @@ for i in range(0, len(s)):
         pass
 </code></pre>
 <p>我们在<strong>for 循环</strong>过程中，应确保<strong>起始值</strong>小于<strong>结束值</strong>，否则程序会在两者相等时跳出循环。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Pythonic]]></title>
-        <id>https://wushuo.ink/post/pythonic/</id>
-        <link href="https://wushuo.ink/post/pythonic/">
-        </link>
-        <updated>2019-12-25T01:05:32.000Z</updated>
-        <content type="html"><![CDATA[<p>我们将非常<code>Python</code>的<code>Python</code>的代码风格称为<strong>Pythonic</strong>。也就是说，<strong>Pythonic</strong>是使用<code>Python</code>写出简洁优美代码的风格：</p>
-<p><strong>交换多个数字</strong></p>
-<pre><code class="language-python">a = 0
-b = 0
-a, b = b, a
-</code></pre>
-<p> </p>
-<p><strong>生成列表</strong></p>
-<pre><code class="language-Python">[i**2 for i in range(0, 41) if i % 2 == 0]
-</code></pre>
-<p> </p>
-<p><strong>检查列表是否为空</strong></p>
-<pre><code class="language-Python">if not lists:
-    print('lists is empty')
-</code></pre>
-<p> </p>
-<p><strong>打开文件或数据处理</strong></p>
-<pre><code class="language-Python">with open(r 'C:\usr\admin\documents\data.txt') as afile:
-    for line in afile:
-        pass
-</code></pre>
-<p> </p>
-<p><strong>返回数据</strong></p>
-<pre><code class="language-Python">return [a, b], a, b
-&quot;&quot;&quot;
-In fact, it returns tuple ([a, b], a, b)
-&quot;&quot;&quot;
-</code></pre>
-<p>以上例子，都是可以通过<strong>Not Pythonic</strong>的方式实现，然而，使用<strong>Pythonic</strong>不仅可以让代码更加简洁，还可以增加代码的“可读性”。</p>
 ]]></content>
     </entry>
 </feed>
