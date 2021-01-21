@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-01-14T09:44:46.097Z</updated>
+    <updated>2021-01-21T04:45:50.675Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -189,9 +189,9 @@
         <link href="https://wushuo.ink/post/VimRenderIssue/">
         </link>
         <updated>2020-12-08T10:59:17.000Z</updated>
-        <summary type="html"><![CDATA[<p>在使用 Vim 时遇到了首行乱码形如<code>+q436f+q6b75+q6b64</code>，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 <code>.vimrc</code> 文件中添加 <code>set t_RV=</code> 确保 Vim 能够显示正确的内容。</p>
+        <summary type="html"><![CDATA[<p>在使用 Vim 时遇到了首行乱码形如&quot;+q436f+q6b75+q6b64&quot;，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 &quot;.vimrc&quot; 文件中添加 &quot;set t_RV=&quot; 确保 Vim 能够显示正确的内容。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>在使用 Vim 时遇到了首行乱码形如<code>+q436f+q6b75+q6b64</code>，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 <code>.vimrc</code> 文件中添加 <code>set t_RV=</code> 确保 Vim 能够显示正确的内容。</p>
+        <content type="html"><![CDATA[<p>在使用 Vim 时遇到了首行乱码形如&quot;+q436f+q6b75+q6b64&quot;，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 &quot;.vimrc&quot; 文件中添加 &quot;set t_RV=&quot; 确保 Vim 能够显示正确的内容。</p>
 <!-- more -->
 <ul>
 <li><a href="#%E9%97%AE%E9%A2%98%E5%A4%8D%E7%8E%B0">问题复现</a></li>
@@ -486,17 +486,17 @@ $ git clone https://github.com/taichi-dev/taichi
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4942477"><label class="task-list-item-label" for="task-item-4942477"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7088518"><label class="task-list-item-label" for="task-item-7088518"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4650265"><label class="task-list-item-label" for="task-item-4650265"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3099146"><label class="task-list-item-label" for="task-item-3099146"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7123363"><label class="task-list-item-label" for="task-item-7123363"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2415218"><label class="task-list-item-label" for="task-item-2415218"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4951064"><label class="task-list-item-label" for="task-item-4951064"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4264352"><label class="task-list-item-label" for="task-item-4264352"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7900647"><label class="task-list-item-label" for="task-item-7900647"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1869408"><label class="task-list-item-label" for="task-item-1869408">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2991578"><label class="task-list-item-label" for="task-item-2991578">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3907729"><label class="task-list-item-label" for="task-item-3907729"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-21800"><label class="task-list-item-label" for="task-item-21800"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7383290"><label class="task-list-item-label" for="task-item-7383290"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5299908"><label class="task-list-item-label" for="task-item-5299908"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2686844"><label class="task-list-item-label" for="task-item-2686844"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3259102"><label class="task-list-item-label" for="task-item-3259102"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9292938"><label class="task-list-item-label" for="task-item-9292938"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-144137"><label class="task-list-item-label" for="task-item-144137"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4134913"><label class="task-list-item-label" for="task-item-4134913"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6572394"><label class="task-list-item-label" for="task-item-6572394">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7481635"><label class="task-list-item-label" for="task-item-7481635">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
