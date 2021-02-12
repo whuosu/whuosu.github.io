@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-02-07T03:36:43.543Z</updated>
+    <updated>2021-02-12T12:52:07.919Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -10,6 +10,37 @@
     <logo>https://wushuo.ink/images/avatar.png</logo>
     <icon>https://wushuo.ink/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[这是和工具们的故事]]></title>
+        <id>https://wushuo.ink/post/withMyTools/</id>
+        <link href="https://wushuo.ink/post/withMyTools/">
+        </link>
+        <updated>2021-02-12T11:40:55.000Z</updated>
+        <summary type="html"><![CDATA[<p>一直着手于工具, 或是即刻着手于眼前; 即使到现在我也没有办法做出决定</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一直着手于工具, 或是即刻着手于眼前; 即使到现在我也没有办法做出决定</p>
+<!-- more -->
+<p>工具的故事, 还得从大一那门 <strong>C 程序设计</strong> 说起</p>
+<p>我发觉老师给出的 <strong>Dev-C++</strong> 并不好用, 准确地说是并不是我想象的风格<br>
+直到后来我才了解到这个开发工具多么美好</p>
+<p>我开始自己配置 Windows MinGW 环境, 并尝试使用了微软的 <a href="https://code.visualstudio.com/">VScode</a> 和 Github 社区的 <a href="https://https://atom.io">Atom</a>, 当时什么也不懂的我就被 <code>Tab</code> 补全折服了<br>
+实际上现如今我依然认为 <code>Tab</code> 补全代码值得称赞, 而 Eclipse 和 Vim 的双键补全也不算糟糕</p>
+<p>往后, 从 Python/pypi 到 JDK, 我开始自己配置环境, 一律编辑器轻装上阵<br>
+中文推圈上也有关于程序员是否应该会配置环境之争, 我也只是认为无需争出个是与非</p>
+<p>再之后, 我用上了微软的黑科技 WSL2, 搭配其自家的 <strong>Windows Terminal</strong>, 开始上手真正意义上的编辑器 <strong>Vim</strong>, 我才开始理解到 &quot;开箱即用&quot; <strong>Dev-C++</strong> 的便利<br>
+于是乎, 一个月半生不熟的 <strong>Vim</strong> 之后, 我辗转回到了 <strong>VScode Remote</strong></p>
+<p>我总沉浸在迷惘中, 自己折腾并使用这些工具是否浪费了时间和精力, 如果这些时间用于&quot;正事&quot;上是否有更大的效益: 从键盘到工作环境, 有许多可能的尝试, 最后归于平静</p>
+<p>有许多卓越成就的人, 或是很多做着很酷工作的普通人, 不会纠结于工作环境, 用着普通的薄膜键盘, 在普通的 VA 显示屏前完成了许许多多伟大的工作</p>
+<p>我从进入高中时就被老师责骂, 自己如果不会整理自己的书桌难以有成功, 想来这也是一种&quot;工具&quot;的使用方法<br>
+我现在连失败都算不上, 也算是一语成谶<br>
+又想到 Linus 创造了 Git, 办公桌上堆积的比我还要凌乱, 也释然了高中时不爱整理的糗事</p>
+<p>今天是大年初一, 新的一年是新的开始, 我赶紧整理了电脑的文件夹, 换了一个新壁纸, 还算看得过去</p>
+<p>和工具们还得待好长一段时间</p>
+<p>辛丑年正月初一<br>
+于浙江省长兴县泗安镇二界岭<br>
+由手机热点发送</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[再见了，DW1820A]]></title>
         <id>https://wushuo.ink/post/hackintoshFromPerfectToGiveup/</id>
@@ -486,17 +517,17 @@ $ git clone https://github.com/taichi-dev/taichi
 </ul>
 <h3 id="build"># <strong>Build</strong></h3>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5289967"><label class="task-list-item-label" for="task-item-5289967"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7160854"><label class="task-list-item-label" for="task-item-7160854"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7019514"><label class="task-list-item-label" for="task-item-7019514"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7415971"><label class="task-list-item-label" for="task-item-7415971"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1210585"><label class="task-list-item-label" for="task-item-1210585"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7156084"><label class="task-list-item-label" for="task-item-7156084"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9337649"><label class="task-list-item-label" for="task-item-9337649"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3449662"><label class="task-list-item-label" for="task-item-3449662"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4940387"><label class="task-list-item-label" for="task-item-4940387"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7211840"><label class="task-list-item-label" for="task-item-7211840">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-906294"><label class="task-list-item-label" for="task-item-906294">  iMessage, Facetime and iTunes can not login</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9476610"><label class="task-list-item-label" for="task-item-9476610"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7040712"><label class="task-list-item-label" for="task-item-7040712"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9568152"><label class="task-list-item-label" for="task-item-9568152"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9874521"><label class="task-list-item-label" for="task-item-9874521"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2976807"><label class="task-list-item-label" for="task-item-2976807"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9115140"><label class="task-list-item-label" for="task-item-9115140"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8183955"><label class="task-list-item-label" for="task-item-8183955"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5260111"><label class="task-list-item-label" for="task-item-5260111"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3037594"><label class="task-list-item-label" for="task-item-3037594"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5484860"><label class="task-list-item-label" for="task-item-5484860">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3261737"><label class="task-list-item-label" for="task-item-3261737">  iMessage, Facetime and iTunes can not login</label></li>
 </ul>
 <h3 id="about-boot"># <strong>About Boot</strong></h3>
 <blockquote>
@@ -606,49 +637,6 @@ print(id(blist))
 </code></pre>
 <p>显然，我们可以看到 <strong>list()</strong> 方法和 <strong>copy()</strong> 方法具有更强的可读性，<strong>切片</strong>虽然Pythonic，但牺牲了代码的可读性，也将没有接触过Python的人拒之门外。</p>
 <p>参考：<a href="https://www.cnblogs.com/ifantastic/p/3811145.html">iFantasticMe的博客</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[循环和下标越界]]></title>
-        <id>https://wushuo.ink/post/loopInPython/</id>
-        <link href="https://wushuo.ink/post/loopInPython/">
-        </link>
-        <updated>2020-04-19T13:18:35.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>失之毫厘，差之千里。</p>
-</blockquote>
-<p>无论是刷题亦或是科学运算中，<strong>循环体</strong>和<strong>数组</strong>，<strong>列表</strong>的搭配总是不可避免地平凡出现。如果想要写出漂亮，优雅的代码，对边界条件和特殊取值的理解应当精确。<br>
-下面是笔者在 <a href="http://leetcode.com">Leetcode</a> 刷题常常遇到的循环体和下标问题：</p>
-<ul>
-<li>循环内的操作是否使循环条件改变</li>
-</ul>
-<p>for循环：</p>
-<pre><code class="language-python">maxnum = 9
-j = 0
-for i in range(0, maxnum):
-    maxnum = maxnum - 1
-    j = j + 1
-print(j) &quot;&quot;&quot; j = 10 &quot;&quot;&quot;
-</code></pre>
-<p>while循环</p>
-<pre><code class="language-python">num = 10
-j = 0
-i = 0
-while i &lt;= 10 and j &lt;= 5:
-    j = j + 1
-    i = i + 1
-print(j)&quot;&quot;&quot; j = 6 &quot;&quot;&quot;
-</code></pre>
-<ul>
-<li>循环和切片操作<br>
-循环和切片<strong>起始值</strong>都能取到，<strong>结束值</strong>都不能取到，在对字符串操作时，应当注意边界操作</li>
-</ul>
-<pre><code class="language-python">s = 'abcdef'
-for i in range(0, len(s)):
-    for j in range(i, i + j + 1):
-        pass
-</code></pre>
-<p>我们在<strong>for 循环</strong>过程中，应确保<strong>起始值</strong>小于<strong>结束值</strong>，否则程序会在两者相等时跳出循环。</p>
 ]]></content>
     </entry>
 </feed>
